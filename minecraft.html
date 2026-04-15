@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마인크래프트 3D</title>
+    <link rel="stylesheet" href="minecraft.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="hud">
+        <div id="crosshair">+</div>
+        <div id="hotbar">
+            <div class="hotbar-slot active" data-block="dirt">흙</div>
+            <div class="hotbar-slot" data-block="stone">돌</div>
+            <div class="hotbar-slot" data-block="wood">나무</div>
+            <div class="hotbar-slot" data-block="grass">풀</div>
+        </div>
+    </div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="minecraft.js"></script>
+</body>
+</html>
