@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Single-file HTML + CSS + JS</title>
+  <style>
+    /* ===== CSS (여기 안에 스타일을 모두 넣습니다) ===== */
+    :root{
+      --bg:#f6f8fa;
+      --card:#ffffff;
+      --accent:#0366d6;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#0f1724;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:24px;
+    }
+    .card{
+      width:100%;
+      max-width:780px;
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 6px 24px rgba(15,23,36,0.08);
+      padding:24px;
+      box-sizing:border-box;
+    }
+    h1{ margin:0 0 8px 0; font-size:20px; }
+    p.lead{ margin:0 0 16px 0; color:var(--muted); }
+    .controls{ display:flex; gap:8px; margin-bottom:16px; }
+    input[type="text"]{ flex:1; padding:8px 10px; border:1px solid #e5e7eb; border-radius:8px; }
+    button{ background:var(--accent); color:white; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; }
+    pre{ background:#0b1220; color:#e6eef8; padding:12px; border-radius:8px; overflow:auto; max-height:320px; }
+    footer{ margin-top:12px; color:var(--muted); font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <h1>Single-file HTML + CSS + JS 샘플</h1>
+    <p class="lead">여기에 JS를 붙여넣거나 직링크를 알려주시면 제가 인라인으로 통합해 드립니다.</p>
+
+    <div class="controls" aria-label="controls">
+      <input id="input" type="text" placeholder="여기에 텍스트 입력" />
+      <button id="runBtn">실행</button>
+      <button id="clearBtn" style="background:#6b7280;">초기화</button>
+    </div>
+
+    <div>
+      <strong>출력</strong>
+      <pre id="output">여기 출력이 표시됩니다.</pre>
+    </div>
+
+    <footer>파일: index.html — 모든 CSS/JS 인라인 포함</footer>
+  </div>
+
+  <script>
+    /* ===== JS (여기도 전부 인라인 가능합니다) ===== */
+    (function(){
+      const input = document.getElementById('input');
+      const runBtn = document.getElementById('runBtn');
+      const clearBtn = document.getElementById('clearBtn');
+      const output = document.getElementById('output');
+
+      runBtn.addEventListener('click', () => {
+        const v = input.value.trim();
+        if(!v){
+          output.textContent = '값을 입력해 주세요.';
+          return;
+        }
+        // 샘플 동작: 입력을 역순으로, 길이, 그리고 간단한 해시(숫자 합)
+        const reversed = v.split('').reverse().join('');
+        const length = v.length;
+        const simpleHash = v.split('').reduce((s,ch)=> s + ch.charCodeAt(0), 0);
+        output.textContent = [
+          `입력: ${v}`,
+          `역순: ${reversed}`,
+          `길이: ${length}`,
+          `간단해시: ${simpleHash}`
+        ].join('\n');
+      });
+
+      clearBtn.addEventListener('click', () => {
+        input.value = '';
+        output.textContent = '여기 출력이 표시됩니다.';
+        input.focus();
+      });
+
+      // 키 엔터로 실행
+      input.addEventListener('keypress', (e) => {
+        if(e.key === 'Enter') runBtn.click();
+      });
+
+      // 초기 포커스
+      input.focus();
+    })();
+  </script>
+</body>
+</html>
