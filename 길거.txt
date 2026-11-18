@@ -1,0 +1,3453 @@
+public final class net.minecraft.a.a.c.a {
+  private a.b e;
+
+  private int f;
+
+  private int g;
+
+  private int h;
+
+  private java.util.Random i;
+
+  private byte[] j;
+
+  private int k;
+
+  private int l;
+
+  public boolean a;
+
+  public boolean b;
+
+  public boolean c;
+
+  public int d;
+
+  private int m;
+
+  private int n;
+
+  private float o;
+
+  private int[] p;
+
+  public net.minecraft.a.a.c.a(a.b);
+    Code:
+       0: aload_0
+       1: invokespecial #175                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #58                 // class java/util/Random
+       8: dup
+       9: invokespecial #185                // Method java/util/Random."<init>":()V
+      12: putfield      #141                // Field i:Ljava/util/Random;
+      15: aload_0
+      16: iconst_0
+      17: putfield      #133                // Field a:Z
+      20: aload_0
+      21: iconst_0
+      22: putfield      #134                // Field b:Z
+      25: aload_0
+      26: iconst_0
+      27: putfield      #135                // Field c:Z
+      30: aload_0
+      31: fconst_0
+      32: putfield      #147                // Field o:F
+      35: aload_0
+      36: ldc           #2                  // int 1048576
+      38: newarray       int
+      40: putfield      #148                // Field p:[I
+      43: aload_0
+      44: aload_1
+      45: putfield      #137                // Field e:La/b;
+      48: return
+
+  public final net.minecraft.a.a.g a(java.lang.String, int, int, int);
+    Code:
+       0: iconst_1
+       1: istore        5
+       3: aload_0
+       4: getfield      #134                // Field b:Z
+       7: ifeq          22
+      10: iload         4
+      12: bipush        64
+      14: isub
+      15: bipush        48
+      17: idiv
+      18: iconst_1
+      19: iadd
+      20: istore        5
+      22: aload_0
+      23: bipush        13
+      25: iload         5
+      27: iconst_4
+      28: imul
+      29: iadd
+      30: putfield      #146                // Field n:I
+      33: aload_0
+      34: getfield      #137                // Field e:La/b;
+      37: ldc           #38                 // String Generating level
+      39: invokeinterface #216,  2          // InterfaceMethod a/b.a:(Ljava/lang/String;)V
+      44: new           #68                 // class net/minecraft/a/a/g
+      47: dup
+      48: invokespecial #205                // Method net/minecraft/a/a/g."<init>":()V
+      51: dup
+      52: astore        6
+      54: aload_0
+      55: getfield      #143                // Field k:I
+      58: putfield      #158                // Field net/minecraft/a/a/g.s:I
+      61: aload         6
+      63: aload_0
+      64: getfield      #144                // Field l:I
+      67: putfield      #159                // Field net/minecraft/a/a/g.t:I
+      70: aload_0
+      71: iload_2
+      72: putfield      #138                // Field f:I
+      75: aload_0
+      76: iload_3
+      77: putfield      #139                // Field g:I
+      80: aload_0
+      81: iload         4
+      83: putfield      #140                // Field h:I
+      86: aload_0
+      87: iload_2
+      88: iload_3
+      89: imul
+      90: iload         4
+      92: imul
+      93: newarray       byte
+      95: putfield      #142                // Field j:[B
+      98: iconst_0
+      99: istore        7
+     101: iload         7
+     103: iload         5
+     105: if_icmpge     1973
+     108: aload_0
+     109: iload         4
+     111: bipush        32
+     113: isub
+     114: iload         7
+     116: bipush        48
+     118: imul
+     119: isub
+     120: putfield      #143                // Field k:I
+     123: aload_0
+     124: aload_0
+     125: getfield      #143                // Field k:I
+     128: iconst_2
+     129: isub
+     130: putfield      #144                // Field l:I
+     133: aload_0
+     134: getfield      #135                // Field c:Z
+     137: ifeq          181
+     140: iload_2
+     141: iload_3
+     142: imul
+     143: newarray       int
+     145: astore        8
+     147: iconst_0
+     148: istore        9
+     150: iload         9
+     152: aload         8
+     154: arraylength
+     155: if_icmpge     170
+     158: aload         8
+     160: iload         9
+     162: iconst_0
+     163: iastore
+     164: iinc          9, 1
+     167: goto          150
+     170: aload_0
+     171: invokespecial #197                // Method b:()V
+     174: aload_0
+     175: invokespecial #197                // Method b:()V
+     178: goto          967
+     181: aload_0
+     182: getfield      #137                // Field e:La/b;
+     185: ldc           #43                 // String Raising..
+     187: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+     192: aload_0
+     193: invokespecial #197                // Method b:()V
+     196: aload_0
+     197: astore        9
+     199: new           #66                 // class net/minecraft/a/a/c/a/d
+     202: dup
+     203: new           #65                 // class net/minecraft/a/a/c/a/c
+     206: dup
+     207: aload         9
+     209: getfield      #141                // Field i:Ljava/util/Random;
+     212: bipush        8
+     214: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     217: new           #65                 // class net/minecraft/a/a/c/a/c
+     220: dup
+     221: aload         9
+     223: getfield      #141                // Field i:Ljava/util/Random;
+     226: bipush        8
+     228: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     231: invokespecial #203                // Method net/minecraft/a/a/c/a/d."<init>":(Lnet/minecraft/a/a/c/a/b;Lnet/minecraft/a/a/c/a/b;)V
+     234: astore        10
+     236: new           #66                 // class net/minecraft/a/a/c/a/d
+     239: dup
+     240: new           #65                 // class net/minecraft/a/a/c/a/c
+     243: dup
+     244: aload         9
+     246: getfield      #141                // Field i:Ljava/util/Random;
+     249: bipush        8
+     251: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     254: new           #65                 // class net/minecraft/a/a/c/a/c
+     257: dup
+     258: aload         9
+     260: getfield      #141                // Field i:Ljava/util/Random;
+     263: bipush        8
+     265: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     268: invokespecial #203                // Method net/minecraft/a/a/c/a/d."<init>":(Lnet/minecraft/a/a/c/a/b;Lnet/minecraft/a/a/c/a/b;)V
+     271: astore        11
+     273: new           #65                 // class net/minecraft/a/a/c/a/c
+     276: dup
+     277: aload         9
+     279: getfield      #141                // Field i:Ljava/util/Random;
+     282: bipush        6
+     284: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     287: astore        12
+     289: new           #65                 // class net/minecraft/a/a/c/a/c
+     292: dup
+     293: aload         9
+     295: getfield      #141                // Field i:Ljava/util/Random;
+     298: iconst_2
+     299: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     302: astore        13
+     304: aload         9
+     306: getfield      #138                // Field f:I
+     309: aload         9
+     311: getfield      #139                // Field g:I
+     314: imul
+     315: newarray       int
+     317: astore        14
+     319: iconst_0
+     320: istore        22
+     322: iload         22
+     324: aload         9
+     326: getfield      #138                // Field f:I
+     329: if_icmpge     707
+     332: iload         22
+     334: i2d
+     335: aload         9
+     337: getfield      #138                // Field f:I
+     340: i2d
+     341: dconst_1
+     342: dsub
+     343: ddiv
+     344: ldc2_w        #83                 // double 0.5d
+     347: dsub
+     348: ldc2_w        #89                 // double 2.0d
+     351: dmul
+     352: invokestatic  #168                // Method java/lang/Math.abs:(D)D
+     355: dstore        23
+     357: aload         9
+     359: iload         22
+     361: i2f
+     362: ldc           #23                 // float 100.0f
+     364: fmul
+     365: aload         9
+     367: getfield      #138                // Field f:I
+     370: iconst_1
+     371: isub
+     372: i2f
+     373: fdiv
+     374: invokespecial #192                // Method a:(F)V
+     377: iconst_0
+     378: istore        25
+     380: iload         25
+     382: aload         9
+     384: getfield      #139                // Field g:I
+     387: if_icmpge     701
+     390: iload         25
+     392: i2d
+     393: aload         9
+     395: getfield      #139                // Field g:I
+     398: i2d
+     399: dconst_1
+     400: dsub
+     401: ddiv
+     402: ldc2_w        #83                 // double 0.5d
+     405: dsub
+     406: ldc2_w        #89                 // double 2.0d
+     409: dmul
+     410: invokestatic  #168                // Method java/lang/Math.abs:(D)D
+     413: dstore        26
+     415: aload         10
+     417: iload         22
+     419: i2f
+     420: ldc           #18                 // float 1.3f
+     422: fmul
+     423: f2d
+     424: iload         25
+     426: i2f
+     427: ldc           #18                 // float 1.3f
+     429: fmul
+     430: f2d
+     431: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+     434: ldc2_w        #97                 // double 6.0d
+     437: ddiv
+     438: ldc2_w        #79                 // double -4.0d
+     441: dadd
+     442: dstore        28
+     444: aload         11
+     446: iload         22
+     448: i2f
+     449: ldc           #18                 // float 1.3f
+     451: fmul
+     452: f2d
+     453: iload         25
+     455: i2f
+     456: ldc           #18                 // float 1.3f
+     458: fmul
+     459: f2d
+     460: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+     463: ldc2_w        #95                 // double 5.0d
+     466: ddiv
+     467: ldc2_w        #101                // double 10.0d
+     470: dadd
+     471: ldc2_w        #79                 // double -4.0d
+     474: dadd
+     475: dstore        30
+     477: aload         12
+     479: iload         22
+     481: i2d
+     482: iload         25
+     484: i2d
+     485: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+     488: ldc2_w        #99                 // double 8.0d
+     491: ddiv
+     492: dup2
+     493: dstore        32
+     495: dconst_0
+     496: dcmpl
+     497: ifle          504
+     500: dload         28
+     502: dstore        30
+     504: dload         28
+     506: dload         30
+     508: invokestatic  #169                // Method java/lang/Math.max:(DD)D
+     511: ldc2_w        #89                 // double 2.0d
+     514: ddiv
+     515: dstore        34
+     517: aload         9
+     519: getfield      #133                // Field a:Z
+     522: ifeq          663
+     525: dload         23
+     527: dload         23
+     529: dmul
+     530: dload         26
+     532: dload         26
+     534: dmul
+     535: dadd
+     536: invokestatic  #174                // Method java/lang/Math.sqrt:(D)D
+     539: ldc2_w        #87                 // double 1.2000000476837158d
+     542: dmul
+     543: dstore        36
+     545: aload         13
+     547: iload         22
+     549: i2f
+     550: ldc           #11                 // float 0.05f
+     552: fmul
+     553: f2d
+     554: iload         25
+     556: i2f
+     557: ldc           #11                 // float 0.05f
+     559: fmul
+     560: f2d
+     561: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+     564: ldc2_w        #93                 // double 4.0d
+     567: ddiv
+     568: dconst_1
+     569: dadd
+     570: dstore        39
+     572: dload         36
+     574: dload         39
+     576: invokestatic  #171                // Method java/lang/Math.min:(DD)D
+     579: dup2
+     580: dstore        36
+     582: dload         23
+     584: dload         26
+     586: invokestatic  #169                // Method java/lang/Math.max:(DD)D
+     589: invokestatic  #169                // Method java/lang/Math.max:(DD)D
+     592: dup2
+     593: dstore        36
+     595: dconst_1
+     596: dcmpl
+     597: ifle          603
+     600: dconst_1
+     601: dstore        36
+     603: dload         36
+     605: dconst_0
+     606: dcmpg
+     607: ifge          613
+     610: dconst_0
+     611: dstore        36
+     613: dload         36
+     615: dload         36
+     617: dmul
+     618: dstore        36
+     620: dload         34
+     622: dconst_1
+     623: dload         36
+     625: dsub
+     626: dmul
+     627: dload         36
+     629: ldc2_w        #101                // double 10.0d
+     632: dmul
+     633: dsub
+     634: ldc2_w        #95                 // double 5.0d
+     637: dadd
+     638: dup2
+     639: dstore        34
+     641: dconst_0
+     642: dcmpg
+     643: ifge          660
+     646: dload         34
+     648: dload         34
+     650: dload         34
+     652: dmul
+     653: ldc2_w        #81                 // double 0.20000000298023224d
+     656: dmul
+     657: dsub
+     658: dstore        34
+     660: goto          678
+     663: dload         34
+     665: dconst_0
+     666: dcmpg
+     667: ifge          678
+     670: dload         34
+     672: ldc2_w        #85                 // double 0.8d
+     675: dmul
+     676: dstore        34
+     678: aload         14
+     680: iload         22
+     682: iload         25
+     684: aload         9
+     686: getfield      #138                // Field f:I
+     689: imul
+     690: iadd
+     691: dload         34
+     693: d2i
+     694: iastore
+     695: iinc          25, 1
+     698: goto          380
+     701: iinc          22, 1
+     704: goto          322
+     707: aload         14
+     709: astore        8
+     711: aload_0
+     712: getfield      #137                // Field e:La/b;
+     715: ldc           #36                 // String Eroding..
+     717: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+     722: aload_0
+     723: invokespecial #197                // Method b:()V
+     726: aload_0
+     727: aload         8
+     729: astore        10
+     731: astore        9
+     733: new           #66                 // class net/minecraft/a/a/c/a/d
+     736: dup
+     737: new           #65                 // class net/minecraft/a/a/c/a/c
+     740: dup
+     741: aload         9
+     743: getfield      #141                // Field i:Ljava/util/Random;
+     746: bipush        8
+     748: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     751: new           #65                 // class net/minecraft/a/a/c/a/c
+     754: dup
+     755: aload         9
+     757: getfield      #141                // Field i:Ljava/util/Random;
+     760: bipush        8
+     762: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     765: invokespecial #203                // Method net/minecraft/a/a/c/a/d."<init>":(Lnet/minecraft/a/a/c/a/b;Lnet/minecraft/a/a/c/a/b;)V
+     768: astore        11
+     770: new           #66                 // class net/minecraft/a/a/c/a/d
+     773: dup
+     774: new           #65                 // class net/minecraft/a/a/c/a/c
+     777: dup
+     778: aload         9
+     780: getfield      #141                // Field i:Ljava/util/Random;
+     783: bipush        8
+     785: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     788: new           #65                 // class net/minecraft/a/a/c/a/c
+     791: dup
+     792: aload         9
+     794: getfield      #141                // Field i:Ljava/util/Random;
+     797: bipush        8
+     799: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+     802: invokespecial #203                // Method net/minecraft/a/a/c/a/d."<init>":(Lnet/minecraft/a/a/c/a/b;Lnet/minecraft/a/a/c/a/b;)V
+     805: astore        12
+     807: iconst_0
+     808: istore        13
+     810: iload         13
+     812: aload         9
+     814: getfield      #138                // Field f:I
+     817: if_icmpge     967
+     820: aload         9
+     822: iload         13
+     824: i2f
+     825: ldc           #23                 // float 100.0f
+     827: fmul
+     828: aload         9
+     830: getfield      #138                // Field f:I
+     833: iconst_1
+     834: isub
+     835: i2f
+     836: fdiv
+     837: invokespecial #192                // Method a:(F)V
+     840: iconst_0
+     841: istore        14
+     843: iload         14
+     845: aload         9
+     847: getfield      #139                // Field g:I
+     850: if_icmpge     961
+     853: aload         11
+     855: iload         13
+     857: iconst_1
+     858: ishl
+     859: i2d
+     860: iload         14
+     862: iconst_1
+     863: ishl
+     864: i2d
+     865: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+     868: ldc2_w        #99                 // double 8.0d
+     871: ddiv
+     872: dstore        20
+     874: aload         12
+     876: iload         13
+     878: iconst_1
+     879: ishl
+     880: i2d
+     881: iload         14
+     883: iconst_1
+     884: ishl
+     885: i2d
+     886: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+     889: dconst_0
+     890: dcmpl
+     891: ifle          898
+     894: iconst_1
+     895: goto          899
+     898: iconst_0
+     899: istore        22
+     901: dload         20
+     903: ldc2_w        #89                 // double 2.0d
+     906: dcmpl
+     907: ifle          955
+     910: aload         10
+     912: iload         13
+     914: iload         14
+     916: aload         9
+     918: getfield      #138                // Field f:I
+     921: imul
+     922: iadd
+     923: iaload
+     924: dup
+     925: istore        23
+     927: iload         22
+     929: isub
+     930: iconst_2
+     931: idiv
+     932: iconst_1
+     933: ishl
+     934: iload         22
+     936: iadd
+     937: istore        23
+     939: aload         10
+     941: iload         13
+     943: iload         14
+     945: aload         9
+     947: getfield      #138                // Field f:I
+     950: imul
+     951: iadd
+     952: iload         23
+     954: iastore
+     955: iinc          14, 1
+     958: goto          843
+     961: iinc          13, 1
+     964: goto          810
+     967: aload_0
+     968: getfield      #137                // Field e:La/b;
+     971: ldc           #44                 // String Soiling..
+     973: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+     978: aload_0
+     979: invokespecial #197                // Method b:()V
+     982: aload_0
+     983: aload         8
+     985: astore        10
+     987: dup
+     988: astore        9
+     990: getfield      #138                // Field f:I
+     993: istore        11
+     995: aload         9
+     997: getfield      #139                // Field g:I
+    1000: istore        12
+    1002: aload         9
+    1004: getfield      #140                // Field h:I
+    1007: istore        13
+    1009: new           #65                 // class net/minecraft/a/a/c/a/c
+    1012: dup
+    1013: aload         9
+    1015: getfield      #141                // Field i:Ljava/util/Random;
+    1018: bipush        8
+    1020: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+    1023: astore        14
+    1025: new           #65                 // class net/minecraft/a/a/c/a/c
+    1028: dup
+    1029: aload         9
+    1031: getfield      #141                // Field i:Ljava/util/Random;
+    1034: bipush        8
+    1036: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+    1039: astore        20
+    1041: iconst_0
+    1042: istore        21
+    1044: iload         21
+    1046: iload         11
+    1048: if_icmpge     1472
+    1051: iload         21
+    1053: i2d
+    1054: iload         11
+    1056: i2d
+    1057: dconst_1
+    1058: dsub
+    1059: ddiv
+    1060: ldc2_w        #83                 // double 0.5d
+    1063: dsub
+    1064: ldc2_w        #89                 // double 2.0d
+    1067: dmul
+    1068: invokestatic  #168                // Method java/lang/Math.abs:(D)D
+    1071: dstore        22
+    1073: aload         9
+    1075: iload         21
+    1077: i2f
+    1078: ldc           #23                 // float 100.0f
+    1080: fmul
+    1081: iload         11
+    1083: iconst_1
+    1084: isub
+    1085: i2f
+    1086: fdiv
+    1087: invokespecial #192                // Method a:(F)V
+    1090: iconst_0
+    1091: istore        24
+    1093: iload         24
+    1095: iload         12
+    1097: if_icmpge     1466
+    1100: iload         24
+    1102: i2d
+    1103: iload         12
+    1105: i2d
+    1106: dconst_1
+    1107: dsub
+    1108: ddiv
+    1109: ldc2_w        #83                 // double 0.5d
+    1112: dsub
+    1113: ldc2_w        #89                 // double 2.0d
+    1116: dmul
+    1117: invokestatic  #168                // Method java/lang/Math.abs:(D)D
+    1120: dstore        25
+    1122: dload         22
+    1124: dload         25
+    1126: invokestatic  #169                // Method java/lang/Math.max:(DD)D
+    1129: dup2
+    1130: dstore        27
+    1132: dload         27
+    1134: dmul
+    1135: dload         27
+    1137: dmul
+    1138: dstore        27
+    1140: aload         14
+    1142: iload         21
+    1144: i2d
+    1145: iload         24
+    1147: i2d
+    1148: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1151: ldc2_w        #107                // double 24.0d
+    1154: ddiv
+    1155: d2i
+    1156: iconst_4
+    1157: isub
+    1158: istore        29
+    1160: aload         10
+    1162: iload         21
+    1164: iload         24
+    1166: iload         11
+    1168: imul
+    1169: iadd
+    1170: iaload
+    1171: aload         9
+    1173: getfield      #143                // Field k:I
+    1176: iadd
+    1177: dup
+    1178: istore        30
+    1180: iload         29
+    1182: iadd
+    1183: istore        31
+    1185: aload         10
+    1187: iload         21
+    1189: iload         24
+    1191: iload         11
+    1193: imul
+    1194: iadd
+    1195: iload         30
+    1197: iload         31
+    1199: invokestatic  #170                // Method java/lang/Math.max:(II)I
+    1202: iastore
+    1203: aload         10
+    1205: iload         21
+    1207: iload         24
+    1209: iload         11
+    1211: imul
+    1212: iadd
+    1213: iaload
+    1214: iload         13
+    1216: iconst_2
+    1217: isub
+    1218: if_icmple     1236
+    1221: aload         10
+    1223: iload         21
+    1225: iload         24
+    1227: iload         11
+    1229: imul
+    1230: iadd
+    1231: iload         13
+    1233: iconst_2
+    1234: isub
+    1235: iastore
+    1236: aload         10
+    1238: iload         21
+    1240: iload         24
+    1242: iload         11
+    1244: imul
+    1245: iadd
+    1246: iaload
+    1247: ifgt          1262
+    1250: aload         10
+    1252: iload         21
+    1254: iload         24
+    1256: iload         11
+    1258: imul
+    1259: iadd
+    1260: iconst_1
+    1261: iastore
+    1262: aload         20
+    1264: iload         21
+    1266: i2d
+    1267: ldc2_w        #91                 // double 2.3d
+    1270: dmul
+    1271: iload         24
+    1273: i2d
+    1274: ldc2_w        #91                 // double 2.3d
+    1277: dmul
+    1278: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1281: ldc2_w        #107                // double 24.0d
+    1284: ddiv
+    1285: dup2
+    1286: dstore        32
+    1288: invokestatic  #168                // Method java/lang/Math.abs:(D)D
+    1291: invokestatic  #174                // Method java/lang/Math.sqrt:(D)D
+    1294: dload         32
+    1296: invokestatic  #173                // Method java/lang/Math.signum:(D)D
+    1299: dmul
+    1300: ldc2_w        #105                // double 20.0d
+    1303: dmul
+    1304: d2i
+    1305: aload         9
+    1307: getfield      #143                // Field k:I
+    1310: iadd
+    1311: dup
+    1312: istore        34
+    1314: i2d
+    1315: dconst_1
+    1316: dload         27
+    1318: dsub
+    1319: dmul
+    1320: dload         27
+    1322: aload         9
+    1324: getfield      #140                // Field h:I
+    1327: i2d
+    1328: dmul
+    1329: dadd
+    1330: d2i
+    1331: dup
+    1332: istore        34
+    1334: aload         9
+    1336: getfield      #143                // Field k:I
+    1339: if_icmple     1349
+    1342: aload         9
+    1344: getfield      #140                // Field h:I
+    1347: istore        34
+    1349: iconst_0
+    1350: istore        35
+    1352: iload         35
+    1354: iload         13
+    1356: if_icmpge     1460
+    1359: iload         35
+    1361: aload         9
+    1363: getfield      #139                // Field g:I
+    1366: imul
+    1367: iload         24
+    1369: iadd
+    1370: aload         9
+    1372: getfield      #138                // Field f:I
+    1375: imul
+    1376: iload         21
+    1378: iadd
+    1379: istore        36
+    1381: iconst_0
+    1382: istore        37
+    1384: iload         35
+    1386: iload         30
+    1388: if_icmpgt     1399
+    1391: getstatic     #122                // Field net/minecraft/a/a/b/x.k:Lnet/minecraft/a/a/b/x;
+    1394: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    1397: istore        37
+    1399: iload         35
+    1401: iload         31
+    1403: if_icmpgt     1414
+    1406: getstatic     #120                // Field net/minecraft/a/a/b/x.i:Lnet/minecraft/a/a/b/x;
+    1409: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    1412: istore        37
+    1414: aload         9
+    1416: getfield      #134                // Field b:Z
+    1419: ifeq          1432
+    1422: iload         35
+    1424: iload         34
+    1426: if_icmpge     1432
+    1429: iconst_0
+    1430: istore        37
+    1432: aload         9
+    1434: getfield      #142                // Field j:[B
+    1437: iload         36
+    1439: baload
+    1440: ifne          1454
+    1443: aload         9
+    1445: getfield      #142                // Field j:[B
+    1448: iload         36
+    1450: iload         37
+    1452: i2b
+    1453: bastore
+    1454: iinc          35, 1
+    1457: goto          1352
+    1460: iinc          24, 1
+    1463: goto          1093
+    1466: iinc          21, 1
+    1469: goto          1044
+    1472: aload_0
+    1473: getfield      #137                // Field e:La/b;
+    1476: ldc           #39                 // String Growing..
+    1478: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    1483: aload_0
+    1484: invokespecial #197                // Method b:()V
+    1487: aload_0
+    1488: aload         8
+    1490: astore        10
+    1492: dup
+    1493: astore        9
+    1495: getfield      #138                // Field f:I
+    1498: istore        11
+    1500: aload         9
+    1502: getfield      #139                // Field g:I
+    1505: istore        12
+    1507: new           #65                 // class net/minecraft/a/a/c/a/c
+    1510: dup
+    1511: aload         9
+    1513: getfield      #141                // Field i:Ljava/util/Random;
+    1516: bipush        8
+    1518: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+    1521: astore        13
+    1523: new           #65                 // class net/minecraft/a/a/c/a/c
+    1526: dup
+    1527: aload         9
+    1529: getfield      #141                // Field i:Ljava/util/Random;
+    1532: bipush        8
+    1534: invokespecial #202                // Method net/minecraft/a/a/c/a/c."<init>":(Ljava/util/Random;I)V
+    1537: astore        14
+    1539: aload         9
+    1541: getfield      #143                // Field k:I
+    1544: iconst_1
+    1545: isub
+    1546: istore        20
+    1548: aload         9
+    1550: getfield      #136                // Field d:I
+    1553: iconst_2
+    1554: if_icmpne     1560
+    1557: iinc          20, 2
+    1560: iconst_0
+    1561: istore        21
+    1563: iload         21
+    1565: iload         11
+    1567: if_icmpge     1967
+    1570: aload         9
+    1572: iload         21
+    1574: i2f
+    1575: ldc           #23                 // float 100.0f
+    1577: fmul
+    1578: iload         11
+    1580: iconst_1
+    1581: isub
+    1582: i2f
+    1583: fdiv
+    1584: invokespecial #192                // Method a:(F)V
+    1587: iconst_0
+    1588: istore        22
+    1590: iload         22
+    1592: iload         12
+    1594: if_icmpge     1961
+    1597: aload         13
+    1599: iload         21
+    1601: i2d
+    1602: iload         22
+    1604: i2d
+    1605: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1608: ldc2_w        #99                 // double 8.0d
+    1611: dcmpl
+    1612: ifle          1619
+    1615: iconst_1
+    1616: goto          1620
+    1619: iconst_0
+    1620: istore        23
+    1622: aload         9
+    1624: getfield      #133                // Field a:Z
+    1627: ifeq          1655
+    1630: aload         13
+    1632: iload         21
+    1634: i2d
+    1635: iload         22
+    1637: i2d
+    1638: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1641: ldc2_w        #77                 // double -8.0d
+    1644: dcmpl
+    1645: ifle          1652
+    1648: iconst_1
+    1649: goto          1653
+    1652: iconst_0
+    1653: istore        23
+    1655: aload         9
+    1657: getfield      #136                // Field d:I
+    1660: iconst_2
+    1661: if_icmpne     1689
+    1664: aload         13
+    1666: iload         21
+    1668: i2d
+    1669: iload         22
+    1671: i2d
+    1672: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1675: ldc2_w        #75                 // double -32.0d
+    1678: dcmpl
+    1679: ifle          1686
+    1682: iconst_1
+    1683: goto          1687
+    1686: iconst_0
+    1687: istore        23
+    1689: aload         14
+    1691: iload         21
+    1693: i2d
+    1694: iload         22
+    1696: i2d
+    1697: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1700: ldc2_w        #103                // double 12.0d
+    1703: dcmpl
+    1704: ifle          1711
+    1707: iconst_1
+    1708: goto          1712
+    1711: iconst_0
+    1712: istore        24
+    1714: aload         9
+    1716: getfield      #136                // Field d:I
+    1719: iconst_1
+    1720: if_icmpeq     1732
+    1723: aload         9
+    1725: getfield      #136                // Field d:I
+    1728: iconst_3
+    1729: if_icmpne     1757
+    1732: aload         13
+    1734: iload         21
+    1736: i2d
+    1737: iload         22
+    1739: i2d
+    1740: invokevirtual #201                // Method net/minecraft/a/a/c/a/b.a:(DD)D
+    1743: ldc2_w        #77                 // double -8.0d
+    1746: dcmpl
+    1747: ifle          1754
+    1750: iconst_1
+    1751: goto          1755
+    1754: iconst_0
+    1755: istore        23
+    1757: aload         10
+    1759: iload         21
+    1761: iload         22
+    1763: iload         11
+    1765: imul
+    1766: iadd
+    1767: iaload
+    1768: dup
+    1769: istore        25
+    1771: aload         9
+    1773: getfield      #139                // Field g:I
+    1776: imul
+    1777: iload         22
+    1779: iadd
+    1780: aload         9
+    1782: getfield      #138                // Field f:I
+    1785: imul
+    1786: iload         21
+    1788: iadd
+    1789: istore        26
+    1791: aload         9
+    1793: getfield      #142                // Field j:[B
+    1796: iload         25
+    1798: iconst_1
+    1799: iadd
+    1800: aload         9
+    1802: getfield      #139                // Field g:I
+    1805: imul
+    1806: iload         22
+    1808: iadd
+    1809: aload         9
+    1811: getfield      #138                // Field f:I
+    1814: imul
+    1815: iload         21
+    1817: iadd
+    1818: baload
+    1819: sipush        255
+    1822: iand
+    1823: dup
+    1824: istore        27
+    1826: getstatic     #124                // Field net/minecraft/a/a/b/x.p:Lnet/minecraft/a/a/b/x;
+    1829: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    1832: if_icmpeq     1851
+    1835: iload         27
+    1837: getstatic     #125                // Field net/minecraft/a/a/b/x.q:Lnet/minecraft/a/a/b/x;
+    1840: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    1843: if_icmpeq     1851
+    1846: iload         27
+    1848: ifne          1883
+    1851: iload         25
+    1853: aload         9
+    1855: getfield      #143                // Field k:I
+    1858: iconst_1
+    1859: isub
+    1860: if_icmpgt     1883
+    1863: iload         24
+    1865: ifeq          1883
+    1868: aload         9
+    1870: getfield      #142                // Field j:[B
+    1873: iload         26
+    1875: getstatic     #129                // Field net/minecraft/a/a/b/x.u:Lnet/minecraft/a/a/b/x;
+    1878: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    1881: i2b
+    1882: bastore
+    1883: iload         27
+    1885: ifne          1955
+    1888: iconst_m1
+    1889: istore        28
+    1891: iload         25
+    1893: iload         20
+    1895: if_icmpgt     1928
+    1898: iload         23
+    1900: ifeq          1928
+    1903: getstatic     #128                // Field net/minecraft/a/a/b/x.t:Lnet/minecraft/a/a/b/x;
+    1906: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    1909: istore        28
+    1911: aload         9
+    1913: getfield      #136                // Field d:I
+    1916: iconst_1
+    1917: if_icmpne     1928
+    1920: getstatic     #121                // Field net/minecraft/a/a/b/x.j:Lnet/minecraft/a/a/b/af;
+    1923: getfield      #111                // Field net/minecraft/a/a/b/af.at:I
+    1926: istore        28
+    1928: aload         9
+    1930: getfield      #142                // Field j:[B
+    1933: iload         26
+    1935: baload
+    1936: ifeq          1955
+    1939: iload         28
+    1941: ifle          1955
+    1944: aload         9
+    1946: getfield      #142                // Field j:[B
+    1949: iload         26
+    1951: iload         28
+    1953: i2b
+    1954: bastore
+    1955: iinc          22, 1
+    1958: goto          1590
+    1961: iinc          21, 1
+    1964: goto          1563
+    1967: iinc          7, 1
+    1970: goto          101
+    1973: aload_0
+    1974: getfield      #137                // Field e:La/b;
+    1977: ldc           #33                 // String Carving..
+    1979: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    1984: aload_0
+    1985: invokespecial #197                // Method b:()V
+    1988: aload_0
+    1989: dup
+    1990: astore        9
+    1992: getfield      #138                // Field f:I
+    1995: istore        12
+    1997: aload         9
+    1999: getfield      #139                // Field g:I
+    2002: istore        13
+    2004: aload         9
+    2006: getfield      #140                // Field h:I
+    2009: istore        14
+    2011: iload         12
+    2013: iload         13
+    2015: imul
+    2016: iload         14
+    2018: imul
+    2019: sipush        256
+    2022: idiv
+    2023: bipush        64
+    2025: idiv
+    2026: iconst_1
+    2027: ishl
+    2028: istore        20
+    2030: iconst_0
+    2031: istore        21
+    2033: iload         21
+    2035: iload         20
+    2037: if_icmpge     2680
+    2040: aload         9
+    2042: iload         21
+    2044: i2f
+    2045: ldc           #23                 // float 100.0f
+    2047: fmul
+    2048: iload         20
+    2050: iconst_1
+    2051: isub
+    2052: i2f
+    2053: fdiv
+    2054: invokespecial #192                // Method a:(F)V
+    2057: aload         9
+    2059: getfield      #141                // Field i:Ljava/util/Random;
+    2062: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2065: iload         12
+    2067: i2f
+    2068: fmul
+    2069: fstore        22
+    2071: aload         9
+    2073: getfield      #141                // Field i:Ljava/util/Random;
+    2076: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2079: iload         14
+    2081: i2f
+    2082: fmul
+    2083: fstore        23
+    2085: aload         9
+    2087: getfield      #141                // Field i:Ljava/util/Random;
+    2090: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2093: iload         13
+    2095: i2f
+    2096: fmul
+    2097: fstore        24
+    2099: aload         9
+    2101: getfield      #141                // Field i:Ljava/util/Random;
+    2104: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2107: aload         9
+    2109: getfield      #141                // Field i:Ljava/util/Random;
+    2112: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2115: fadd
+    2116: ldc           #24                 // float 200.0f
+    2118: fmul
+    2119: f2i
+    2120: istore        25
+    2122: aload         9
+    2124: getfield      #141                // Field i:Ljava/util/Random;
+    2127: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2130: ldc           #19                 // float 3.1415927f
+    2132: fmul
+    2133: fconst_2
+    2134: fmul
+    2135: fstore        26
+    2137: fconst_0
+    2138: fstore        27
+    2140: aload         9
+    2142: getfield      #141                // Field i:Ljava/util/Random;
+    2145: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2148: ldc           #19                 // float 3.1415927f
+    2150: fmul
+    2151: fconst_2
+    2152: fmul
+    2153: fstore        28
+    2155: fconst_0
+    2156: fstore        29
+    2158: aload         9
+    2160: getfield      #141                // Field i:Ljava/util/Random;
+    2163: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2166: aload         9
+    2168: getfield      #141                // Field i:Ljava/util/Random;
+    2171: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2174: fmul
+    2175: fstore        30
+    2177: iconst_0
+    2178: istore        31
+    2180: iload         31
+    2182: iload         25
+    2184: if_icmpge     2674
+    2187: fload         22
+    2189: fload         26
+    2191: invokestatic  #164                // Method a/a.a:(F)F
+    2194: fload         28
+    2196: invokestatic  #165                // Method a/a.b:(F)F
+    2199: fmul
+    2200: fadd
+    2201: fstore        22
+    2203: fload         24
+    2205: fload         26
+    2207: invokestatic  #165                // Method a/a.b:(F)F
+    2210: fload         28
+    2212: invokestatic  #165                // Method a/a.b:(F)F
+    2215: fmul
+    2216: fadd
+    2217: fstore        24
+    2219: fload         23
+    2221: fload         28
+    2223: invokestatic  #164                // Method a/a.a:(F)F
+    2226: fadd
+    2227: fstore        23
+    2229: fload         26
+    2231: fload         27
+    2233: ldc           #12                 // float 0.2f
+    2235: fmul
+    2236: fadd
+    2237: fstore        26
+    2239: fload         27
+    2241: ldc           #16                 // float 0.9f
+    2243: fmul
+    2244: dup
+    2245: fstore        27
+    2247: aload         9
+    2249: getfield      #141                // Field i:Ljava/util/Random;
+    2252: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2255: aload         9
+    2257: getfield      #141                // Field i:Ljava/util/Random;
+    2260: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2263: fsub
+    2264: fadd
+    2265: fstore        27
+    2267: fload         28
+    2269: fload         29
+    2271: ldc           #14                 // float 0.5f
+    2273: fmul
+    2274: fadd
+    2275: dup
+    2276: fstore        28
+    2278: ldc           #14                 // float 0.5f
+    2280: fmul
+    2281: fstore        28
+    2283: fload         29
+    2285: ldc           #15                 // float 0.75f
+    2287: fmul
+    2288: dup
+    2289: fstore        29
+    2291: aload         9
+    2293: getfield      #141                // Field i:Ljava/util/Random;
+    2296: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2299: aload         9
+    2301: getfield      #141                // Field i:Ljava/util/Random;
+    2304: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2307: fsub
+    2308: fadd
+    2309: fstore        29
+    2311: aload         9
+    2313: getfield      #141                // Field i:Ljava/util/Random;
+    2316: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2319: ldc           #13                 // float 0.25f
+    2321: fcmpg
+    2322: iflt          2668
+    2325: fload         22
+    2327: aload         9
+    2329: getfield      #141                // Field i:Ljava/util/Random;
+    2332: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2335: ldc           #21                 // float 4.0f
+    2337: fmul
+    2338: fconst_2
+    2339: fsub
+    2340: ldc           #12                 // float 0.2f
+    2342: fmul
+    2343: fadd
+    2344: fstore        32
+    2346: fload         23
+    2348: aload         9
+    2350: getfield      #141                // Field i:Ljava/util/Random;
+    2353: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2356: ldc           #21                 // float 4.0f
+    2358: fmul
+    2359: fconst_2
+    2360: fsub
+    2361: ldc           #12                 // float 0.2f
+    2363: fmul
+    2364: fadd
+    2365: fstore        33
+    2367: fload         24
+    2369: aload         9
+    2371: getfield      #141                // Field i:Ljava/util/Random;
+    2374: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+    2377: ldc           #21                 // float 4.0f
+    2379: fmul
+    2380: fconst_2
+    2381: fsub
+    2382: ldc           #12                 // float 0.2f
+    2384: fmul
+    2385: fadd
+    2386: fstore        34
+    2388: aload         9
+    2390: getfield      #140                // Field h:I
+    2393: i2f
+    2394: fload         33
+    2396: fsub
+    2397: aload         9
+    2399: getfield      #140                // Field h:I
+    2402: i2f
+    2403: fdiv
+    2404: fstore        35
+    2406: ldc           #17                 // float 1.2f
+    2408: fload         35
+    2410: ldc           #20                 // float 3.5f
+    2412: fmul
+    2413: fconst_1
+    2414: fadd
+    2415: fload         30
+    2417: fmul
+    2418: fadd
+    2419: fstore        36
+    2421: iload         31
+    2423: i2f
+    2424: ldc           #19                 // float 3.1415927f
+    2426: fmul
+    2427: iload         25
+    2429: i2f
+    2430: fdiv
+    2431: invokestatic  #164                // Method a/a.a:(F)F
+    2434: fload         36
+    2436: fmul
+    2437: fstore        37
+    2439: fload         32
+    2441: fload         37
+    2443: fsub
+    2444: f2i
+    2445: istore        5
+    2447: iload         5
+    2449: fload         32
+    2451: fload         37
+    2453: fadd
+    2454: f2i
+    2455: if_icmpgt     2668
+    2458: fload         33
+    2460: fload         37
+    2462: fsub
+    2463: f2i
+    2464: istore        39
+    2466: iload         39
+    2468: fload         33
+    2470: fload         37
+    2472: fadd
+    2473: f2i
+    2474: if_icmpgt     2662
+    2477: fload         34
+    2479: fload         37
+    2481: fsub
+    2482: f2i
+    2483: istore        40
+    2485: iload         40
+    2487: fload         34
+    2489: fload         37
+    2491: fadd
+    2492: f2i
+    2493: if_icmpgt     2656
+    2496: iload         5
+    2498: i2f
+    2499: fload         32
+    2501: fsub
+    2502: fstore        7
+    2504: iload         39
+    2506: i2f
+    2507: fload         33
+    2509: fsub
+    2510: fstore        8
+    2512: iload         40
+    2514: i2f
+    2515: fload         34
+    2517: fsub
+    2518: fstore        10
+    2520: fload         7
+    2522: fload         7
+    2524: fmul
+    2525: fload         8
+    2527: fload         8
+    2529: fmul
+    2530: fconst_2
+    2531: fmul
+    2532: fadd
+    2533: fload         10
+    2535: fload         10
+    2537: fmul
+    2538: fadd
+    2539: dup
+    2540: fstore        7
+    2542: fload         37
+    2544: fload         37
+    2546: fmul
+    2547: fcmpg
+    2548: ifge          2650
+    2551: iload         5
+    2553: ifle          2650
+    2556: iload         39
+    2558: ifle          2650
+    2561: iload         40
+    2563: ifle          2650
+    2566: iload         5
+    2568: aload         9
+    2570: getfield      #138                // Field f:I
+    2573: iconst_1
+    2574: isub
+    2575: if_icmpge     2650
+    2578: iload         39
+    2580: aload         9
+    2582: getfield      #140                // Field h:I
+    2585: iconst_1
+    2586: isub
+    2587: if_icmpge     2650
+    2590: iload         40
+    2592: aload         9
+    2594: getfield      #139                // Field g:I
+    2597: iconst_1
+    2598: isub
+    2599: if_icmpge     2650
+    2602: iload         39
+    2604: aload         9
+    2606: getfield      #139                // Field g:I
+    2609: imul
+    2610: iload         40
+    2612: iadd
+    2613: aload         9
+    2615: getfield      #138                // Field f:I
+    2618: imul
+    2619: iload         5
+    2621: iadd
+    2622: istore        7
+    2624: aload         9
+    2626: getfield      #142                // Field j:[B
+    2629: iload         7
+    2631: baload
+    2632: getstatic     #120                // Field net/minecraft/a/a/b/x.i:Lnet/minecraft/a/a/b/x;
+    2635: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2638: if_icmpne     2650
+    2641: aload         9
+    2643: getfield      #142                // Field j:[B
+    2646: iload         7
+    2648: iconst_0
+    2649: bastore
+    2650: iinc          40, 1
+    2653: goto          2485
+    2656: iinc          39, 1
+    2659: goto          2466
+    2662: iinc          5, 1
+    2665: goto          2447
+    2668: iinc          31, 1
+    2671: goto          2180
+    2674: iinc          21, 1
+    2677: goto          2033
+    2680: aload_0
+    2681: getstatic     #132                // Field net/minecraft/a/a/b/x.x:Lnet/minecraft/a/a/b/x;
+    2684: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2687: sipush        1000
+    2690: bipush        10
+    2692: iload         4
+    2694: iconst_2
+    2695: ishl
+    2696: iconst_5
+    2697: idiv
+    2698: invokespecial #193                // Method a:(IIII)I
+    2701: istore        7
+    2703: aload_0
+    2704: getstatic     #131                // Field net/minecraft/a/a/b/x.w:Lnet/minecraft/a/a/b/x;
+    2707: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2710: sipush        800
+    2713: bipush        8
+    2715: iload         4
+    2717: iconst_3
+    2718: imul
+    2719: iconst_5
+    2720: idiv
+    2721: invokespecial #193                // Method a:(IIII)I
+    2724: istore        8
+    2726: aload_0
+    2727: getstatic     #130                // Field net/minecraft/a/a/b/x.v:Lnet/minecraft/a/a/b/x;
+    2730: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2733: sipush        500
+    2736: bipush        6
+    2738: iload         4
+    2740: iconst_1
+    2741: ishl
+    2742: iconst_5
+    2743: idiv
+    2744: invokespecial #193                // Method a:(IIII)I
+    2747: istore        9
+    2749: aload_0
+    2750: getstatic     #118                // Field net/minecraft/a/a/b/x.al:Lnet/minecraft/a/a/b/x;
+    2753: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2756: sipush        800
+    2759: iconst_2
+    2760: iload         4
+    2762: iconst_5
+    2763: idiv
+    2764: invokespecial #193                // Method a:(IIII)I
+    2767: istore        5
+    2769: getstatic     #109                // Field java/lang/System.out:Ljava/io/PrintStream;
+    2772: new           #55                 // class java/lang/StringBuilder
+    2775: dup
+    2776: invokespecial #176                // Method java/lang/StringBuilder."<init>":()V
+    2779: ldc           #34                 // String Coal:
+    2781: invokevirtual #178                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    2784: iload         7
+    2786: invokevirtual #177                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+    2789: ldc           #28                 // String , Iron:
+    2791: invokevirtual #178                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    2794: iload         8
+    2796: invokevirtual #177                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+    2799: ldc           #27                 // String , Gold:
+    2801: invokevirtual #178                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    2804: iload         9
+    2806: invokevirtual #177                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+    2809: ldc           #26                 // String , Diamond:
+    2811: invokevirtual #178                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    2814: iload         5
+    2816: invokevirtual #177                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+    2819: invokevirtual #179                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+    2822: invokevirtual #166                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+    2825: aload_0
+    2826: getfield      #137                // Field e:La/b;
+    2829: ldc           #41                 // String Melting..
+    2831: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    2836: aload_0
+    2837: invokespecial #197                // Method b:()V
+    2840: aload_0
+    2841: invokespecial #199                // Method c:()V
+    2844: aload         6
+    2846: iload         4
+    2848: iconst_2
+    2849: iadd
+    2850: putfield      #160                // Field net/minecraft/a/a/g.u:I
+    2853: aload_0
+    2854: getfield      #134                // Field b:Z
+    2857: ifeq          2886
+    2860: aload_0
+    2861: bipush        -128
+    2863: putfield      #144                // Field l:I
+    2866: aload_0
+    2867: aload_0
+    2868: getfield      #144                // Field l:I
+    2871: iconst_1
+    2872: iadd
+    2873: putfield      #143                // Field k:I
+    2876: aload         6
+    2878: bipush        -16
+    2880: putfield      #160                // Field net/minecraft/a/a/g.u:I
+    2883: goto          2928
+    2886: aload_0
+    2887: getfield      #133                // Field a:Z
+    2890: ifne          2917
+    2893: aload_0
+    2894: aload_0
+    2895: getfield      #143                // Field k:I
+    2898: iconst_1
+    2899: iadd
+    2900: putfield      #144                // Field l:I
+    2903: aload_0
+    2904: aload_0
+    2905: getfield      #144                // Field l:I
+    2908: bipush        16
+    2910: isub
+    2911: putfield      #143                // Field k:I
+    2914: goto          2928
+    2917: aload_0
+    2918: aload_0
+    2919: getfield      #143                // Field k:I
+    2922: bipush        9
+    2924: isub
+    2925: putfield      #144                // Field l:I
+    2928: aload_0
+    2929: getfield      #137                // Field e:La/b;
+    2932: ldc           #46                 // String Watering..
+    2934: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    2939: aload_0
+    2940: invokespecial #197                // Method b:()V
+    2943: aload_0
+    2944: invokespecial #191                // Method a:()V
+    2947: aload_0
+    2948: getfield      #134                // Field b:Z
+    2951: ifne          3080
+    2954: getstatic     #125                // Field net/minecraft/a/a/b/x.q:Lnet/minecraft/a/a/b/x;
+    2957: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2960: istore        5
+    2962: aload_0
+    2963: getfield      #136                // Field d:I
+    2966: iconst_1
+    2967: if_icmpne     2978
+    2970: getstatic     #127                // Field net/minecraft/a/a/b/x.s:Lnet/minecraft/a/a/b/x;
+    2973: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    2976: istore        5
+    2978: iconst_0
+    2979: istore        7
+    2981: iload         7
+    2983: iload_2
+    2984: if_icmpge     3029
+    2987: aload_0
+    2988: iload         7
+    2990: aload_0
+    2991: getfield      #143                // Field k:I
+    2994: iconst_1
+    2995: isub
+    2996: iconst_0
+    2997: iconst_0
+    2998: iload         5
+    3000: invokespecial #194                // Method a:(IIIII)J
+    3003: pop2
+    3004: aload_0
+    3005: iload         7
+    3007: aload_0
+    3008: getfield      #143                // Field k:I
+    3011: iconst_1
+    3012: isub
+    3013: iload_3
+    3014: iconst_1
+    3015: isub
+    3016: iconst_0
+    3017: iload         5
+    3019: invokespecial #194                // Method a:(IIIII)J
+    3022: pop2
+    3023: iinc          7, 1
+    3026: goto          2981
+    3029: iconst_0
+    3030: istore        7
+    3032: iload         7
+    3034: iload_3
+    3035: if_icmpge     3080
+    3038: aload_0
+    3039: iload_2
+    3040: iconst_1
+    3041: isub
+    3042: aload_0
+    3043: getfield      #143                // Field k:I
+    3046: iconst_1
+    3047: isub
+    3048: iload         7
+    3050: iconst_0
+    3051: iload         5
+    3053: invokespecial #194                // Method a:(IIIII)J
+    3056: pop2
+    3057: aload_0
+    3058: iconst_0
+    3059: aload_0
+    3060: getfield      #143                // Field k:I
+    3063: iconst_1
+    3064: isub
+    3065: iload         7
+    3067: iconst_0
+    3068: iload         5
+    3070: invokespecial #194                // Method a:(IIIII)J
+    3073: pop2
+    3074: iinc          7, 1
+    3077: goto          3032
+    3080: aload_0
+    3081: getfield      #136                // Field d:I
+    3084: ifne          3108
+    3087: aload         6
+    3089: ldc           #7                  // int 10079487
+    3091: putfield      #161                // Field net/minecraft/a/a/g.v:I
+    3094: aload         6
+    3096: ldc           #10                 // int 16777215
+    3098: putfield      #162                // Field net/minecraft/a/a/g.w:I
+    3101: aload         6
+    3103: ldc           #10                 // int 16777215
+    3105: putfield      #163                // Field net/minecraft/a/a/g.x:I
+    3108: aload_0
+    3109: getfield      #136                // Field d:I
+    3112: iconst_1
+    3113: if_icmpne     3183
+    3116: aload         6
+    3118: ldc           #4                  // int 2164736
+    3120: putfield      #163                // Field net/minecraft/a/a/g.x:I
+    3123: aload         6
+    3125: ldc           #3                  // int 1049600
+    3127: putfield      #162                // Field net/minecraft/a/a/g.w:I
+    3130: aload         6
+    3132: ldc           #3                  // int 1049600
+    3134: putfield      #161                // Field net/minecraft/a/a/g.v:I
+    3137: aload         6
+    3139: aload         6
+    3141: bipush        7
+    3143: dup_x1
+    3144: putfield      #149                // Field net/minecraft/a/a/g.A:I
+    3147: putfield      #150                // Field net/minecraft/a/a/g.B:I
+    3150: aload         6
+    3152: getstatic     #126                // Field net/minecraft/a/a/b/x.r:Lnet/minecraft/a/a/b/x;
+    3155: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+    3158: putfield      #157                // Field net/minecraft/a/a/g.m:I
+    3161: aload_0
+    3162: getfield      #134                // Field b:Z
+    3165: ifeq          3183
+    3168: aload         6
+    3170: iload         4
+    3172: iconst_2
+    3173: iadd
+    3174: putfield      #160                // Field net/minecraft/a/a/g.u:I
+    3177: aload_0
+    3178: bipush        -16
+    3180: putfield      #143                // Field k:I
+    3183: aload_0
+    3184: getfield      #136                // Field d:I
+    3187: iconst_2
+    3188: if_icmpne     3242
+    3191: aload         6
+    3193: ldc           #8                  // int 13033215
+    3195: putfield      #161                // Field net/minecraft/a/a/g.v:I
+    3198: aload         6
+    3200: ldc           #8                  // int 13033215
+    3202: putfield      #162                // Field net/minecraft/a/a/g.w:I
+    3205: aload         6
+    3207: ldc           #9                  // int 15658751
+    3209: putfield      #163                // Field net/minecraft/a/a/g.x:I
+    3212: aload         6
+    3214: aload         6
+    3216: bipush        15
+    3218: dup_x1
+    3219: putfield      #149                // Field net/minecraft/a/a/g.A:I
+    3222: putfield      #150                // Field net/minecraft/a/a/g.B:I
+    3225: aload         6
+    3227: bipush        16
+    3229: putfield      #149                // Field net/minecraft/a/a/g.A:I
+    3232: aload         6
+    3234: iload         4
+    3236: bipush        64
+    3238: iadd
+    3239: putfield      #160                // Field net/minecraft/a/a/g.u:I
+    3242: aload_0
+    3243: getfield      #136                // Field d:I
+    3246: iconst_3
+    3247: if_icmpne     3284
+    3250: aload         6
+    3252: ldc           #6                  // int 7699847
+    3254: putfield      #161                // Field net/minecraft/a/a/g.v:I
+    3257: aload         6
+    3259: ldc           #5                  // int 5069403
+    3261: putfield      #162                // Field net/minecraft/a/a/g.w:I
+    3264: aload         6
+    3266: ldc           #5                  // int 5069403
+    3268: putfield      #163                // Field net/minecraft/a/a/g.x:I
+    3271: aload         6
+    3273: aload         6
+    3275: bipush        12
+    3277: dup_x1
+    3278: putfield      #149                // Field net/minecraft/a/a/g.A:I
+    3281: putfield      #150                // Field net/minecraft/a/a/g.B:I
+    3284: aload         6
+    3286: aload_0
+    3287: getfield      #143                // Field k:I
+    3290: putfield      #158                // Field net/minecraft/a/a/g.s:I
+    3293: aload         6
+    3295: aload_0
+    3296: getfield      #144                // Field l:I
+    3299: putfield      #159                // Field net/minecraft/a/a/g.t:I
+    3302: aload_0
+    3303: getfield      #137                // Field e:La/b;
+    3306: ldc           #31                 // String Assembling..
+    3308: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    3313: aload_0
+    3314: invokespecial #197                // Method b:()V
+    3317: aload_0
+    3318: fconst_0
+    3319: invokespecial #192                // Method a:(F)V
+    3322: aload         6
+    3324: iload_2
+    3325: iload         4
+    3327: iload_3
+    3328: aload_0
+    3329: getfield      #142                // Field j:[B
+    3332: aconst_null
+    3333: invokevirtual #208                // Method net/minecraft/a/a/g.a:(III[B[B)V
+    3336: aload_0
+    3337: getfield      #137                // Field e:La/b;
+    3340: ldc           #32                 // String Building..
+    3342: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    3347: aload_0
+    3348: invokespecial #197                // Method b:()V
+    3351: aload_0
+    3352: fconst_0
+    3353: invokespecial #192                // Method a:(F)V
+    3356: aload         6
+    3358: invokevirtual #209                // Method net/minecraft/a/a/g.b:()V
+    3361: aload         6
+    3363: invokestatic  #195                // Method a:(Lnet/minecraft/a/a/g;)V
+    3366: aload_0
+    3367: getfield      #137                // Field e:La/b;
+    3370: ldc           #42                 // String Planting..
+    3372: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    3377: aload_0
+    3378: invokespecial #197                // Method b:()V
+    3381: aload_0
+    3382: getfield      #136                // Field d:I
+    3385: iconst_1
+    3386: if_icmpeq     3395
+    3389: aload_0
+    3390: aload         6
+    3392: invokespecial #198                // Method b:(Lnet/minecraft/a/a/g;)V
+    3395: aload_0
+    3396: invokespecial #197                // Method b:()V
+    3399: aload_0
+    3400: aload         6
+    3402: invokespecial #200                // Method c:(Lnet/minecraft/a/a/g;)V
+    3405: aload_0
+    3406: getfield      #136                // Field d:I
+    3409: iconst_3
+    3410: if_icmpne     3435
+    3413: iconst_0
+    3414: istore        5
+    3416: iload         5
+    3418: bipush        50
+    3420: if_icmpge     3435
+    3423: aload_0
+    3424: aload         6
+    3426: invokespecial #200                // Method c:(Lnet/minecraft/a/a/g;)V
+    3429: iinc          5, 1
+    3432: goto          3416
+    3435: bipush        100
+    3437: istore        5
+    3439: aload_0
+    3440: getfield      #136                // Field d:I
+    3443: iconst_2
+    3444: if_icmpne     3452
+    3447: sipush        1000
+    3450: istore        5
+    3452: aload_0
+    3453: invokespecial #197                // Method b:()V
+    3456: aload_0
+    3457: aload         6
+    3459: getstatic     #112                // Field net/minecraft/a/a/b/x.S:Lnet/minecraft/a/a/b/ad;
+    3462: iload         5
+    3464: invokespecial #196                // Method a:(Lnet/minecraft/a/a/g;Lnet/minecraft/a/a/b/ad;I)V
+    3467: aload_0
+    3468: invokespecial #197                // Method b:()V
+    3471: aload_0
+    3472: aload         6
+    3474: getstatic     #113                // Field net/minecraft/a/a/b/x.T:Lnet/minecraft/a/a/b/ad;
+    3477: iload         5
+    3479: invokespecial #196                // Method a:(Lnet/minecraft/a/a/g;Lnet/minecraft/a/a/b/ad;I)V
+    3482: aload_0
+    3483: invokespecial #197                // Method b:()V
+    3486: aload_0
+    3487: aload         6
+    3489: getstatic     #114                // Field net/minecraft/a/a/b/x.U:Lnet/minecraft/a/a/b/ad;
+    3492: bipush        50
+    3494: invokespecial #196                // Method a:(Lnet/minecraft/a/a/g;Lnet/minecraft/a/a/b/ad;I)V
+    3497: aload_0
+    3498: invokespecial #197                // Method b:()V
+    3501: aload_0
+    3502: aload         6
+    3504: getstatic     #115                // Field net/minecraft/a/a/b/x.V:Lnet/minecraft/a/a/b/ad;
+    3507: bipush        50
+    3509: invokespecial #196                // Method a:(Lnet/minecraft/a/a/g;Lnet/minecraft/a/a/b/ad;I)V
+    3512: aload_0
+    3513: getfield      #137                // Field e:La/b;
+    3516: ldc           #40                 // String Lighting..
+    3518: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    3523: aload_0
+    3524: invokespecial #197                // Method b:()V
+    3527: iconst_0
+    3528: istore        7
+    3530: iload         7
+    3532: sipush        10000
+    3535: if_icmpge     3563
+    3538: aload_0
+    3539: iload         7
+    3541: bipush        100
+    3543: imul
+    3544: sipush        10000
+    3547: idiv
+    3548: i2f
+    3549: invokespecial #192                // Method a:(F)V
+    3552: aload         6
+    3554: invokevirtual #211                // Method net/minecraft/a/a/g.d:()V
+    3557: iinc          7, 1
+    3560: goto          3530
+    3563: aload_0
+    3564: getfield      #137                // Field e:La/b;
+    3567: ldc           #45                 // String Spawning..
+    3569: invokeinterface #217,  2          // InterfaceMethod a/b.b:(Ljava/lang/String;)V
+    3574: aload_0
+    3575: invokespecial #197                // Method b:()V
+    3578: new           #59                 // class net/minecraft/a/a/b
+    3581: dup
+    3582: aload         6
+    3584: invokespecial #188                // Method net/minecraft/a/a/b."<init>":(Lnet/minecraft/a/a/g;)V
+    3587: astore        7
+    3589: iconst_0
+    3590: istore_2
+    3591: iload_2
+    3592: sipush        1000
+    3595: if_icmpge     3621
+    3598: aload_0
+    3599: iload_2
+    3600: i2f
+    3601: ldc           #23                 // float 100.0f
+    3603: fmul
+    3604: ldc           #25                 // float 999.0f
+    3606: fdiv
+    3607: invokespecial #192                // Method a:(F)V
+    3610: aload         7
+    3612: invokevirtual #189                // Method net/minecraft/a/a/b.a:()V
+    3615: iinc          2, 1
+    3618: goto          3591
+    3621: aload         6
+    3623: invokestatic  #180                // Method java/lang/System.currentTimeMillis:()J
+    3626: putfield      #153                // Field net/minecraft/a/a/g.h:J
+    3629: aload         6
+    3631: aload_1
+    3632: putfield      #152                // Field net/minecraft/a/a/g.g:Ljava/lang/String;
+    3635: aload         6
+    3637: ldc           #30                 // String A Nice World
+    3639: putfield      #151                // Field net/minecraft/a/a/g.f:Ljava/lang/String;
+    3642: aload_0
+    3643: getfield      #145                // Field m:I
+    3646: aload_0
+    3647: getfield      #146                // Field n:I
+    3650: if_icmpeq     3695
+    3653: new           #52                 // class java/lang/IllegalStateException
+    3656: dup
+    3657: new           #55                 // class java/lang/StringBuilder
+    3660: dup
+    3661: invokespecial #176                // Method java/lang/StringBuilder."<init>":()V
+    3664: ldc           #47                 // String Wrong number of phases! Wanted
+    3666: invokevirtual #178                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    3669: aload_0
+    3670: getfield      #146                // Field n:I
+    3673: invokevirtual #177                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+    3676: ldc           #29                 // String , got
+    3678: invokevirtual #178                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    3681: aload_0
+    3682: getfield      #145                // Field m:I
+    3685: invokevirtual #177                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+    3688: invokevirtual #179                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+    3691: invokespecial #167                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+    3694: athrow
+    3695: aload         6
+    3697: areturn
+
+  private static void a(net.minecraft.a.a.g);
+    Code:
+       0: aload_0
+       1: getfield      #154                // Field net/minecraft/a/a/g.i:I
+       4: istore_1
+       5: aload_0
+       6: getfield      #155                // Field net/minecraft/a/a/g.j:I
+       9: istore_2
+      10: aload_0
+      11: getfield      #156                // Field net/minecraft/a/a/g.k:I
+      14: istore_3
+      15: iload_1
+      16: iconst_3
+      17: isub
+      18: istore        4
+      20: iload         4
+      22: iload_1
+      23: iconst_3
+      24: iadd
+      25: if_icmpgt     208
+      28: iload_2
+      29: iconst_2
+      30: isub
+      31: istore        5
+      33: iload         5
+      35: iload_2
+      36: iconst_2
+      37: iadd
+      38: if_icmpgt     202
+      41: iload_3
+      42: iconst_3
+      43: isub
+      44: istore        6
+      46: iload         6
+      48: iload_3
+      49: iconst_3
+      50: iadd
+      51: if_icmpgt     196
+      54: iload         5
+      56: iload_2
+      57: iconst_1
+      58: isub
+      59: if_icmpge     71
+      62: getstatic     #116                // Field net/minecraft/a/a/b/x.ae:Lnet/minecraft/a/a/b/x;
+      65: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+      68: goto          72
+      71: iconst_0
+      72: istore        7
+      74: iload         4
+      76: iload_1
+      77: iconst_3
+      78: isub
+      79: if_icmpeq     122
+      82: iload         6
+      84: iload_3
+      85: iconst_3
+      86: isub
+      87: if_icmpeq     122
+      90: iload         4
+      92: iload_1
+      93: iconst_3
+      94: iadd
+      95: if_icmpeq     122
+      98: iload         6
+     100: iload_3
+     101: iconst_3
+     102: iadd
+     103: if_icmpeq     122
+     106: iload         5
+     108: iload_2
+     109: iconst_2
+     110: isub
+     111: if_icmpeq     122
+     114: iload         5
+     116: iload_2
+     117: iconst_2
+     118: iadd
+     119: if_icmpne     146
+     122: getstatic     #120                // Field net/minecraft/a/a/b/x.i:Lnet/minecraft/a/a/b/x;
+     125: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     128: istore        7
+     130: iload         5
+     132: iload_2
+     133: iconst_1
+     134: isub
+     135: if_icmplt     146
+     138: getstatic     #123                // Field net/minecraft/a/a/b/x.m:Lnet/minecraft/a/a/b/x;
+     141: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     144: istore        7
+     146: iload         6
+     148: iload_3
+     149: iconst_3
+     150: isub
+     151: if_icmpne     177
+     154: iload         4
+     156: iload_1
+     157: if_icmpne     177
+     160: iload         5
+     162: iload_2
+     163: iconst_1
+     164: isub
+     165: if_icmplt     177
+     168: iload         5
+     170: iload_2
+     171: if_icmpgt     177
+     174: iconst_0
+     175: istore        7
+     177: aload_0
+     178: iload         4
+     180: iload         5
+     182: iload         6
+     184: iload         7
+     186: invokevirtual #210                // Method net/minecraft/a/a/g.b:(IIII)Z
+     189: pop
+     190: iinc          6, 1
+     193: goto          46
+     196: iinc          5, 1
+     199: goto          33
+     202: iinc          4, 1
+     205: goto          20
+     208: aload_0
+     209: iload_1
+     210: iconst_3
+     211: isub
+     212: iconst_1
+     213: iadd
+     214: iload_2
+     215: iload_3
+     216: getstatic     #117                // Field net/minecraft/a/a/b/x.af:Lnet/minecraft/a/a/b/x;
+     219: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     222: invokevirtual #210                // Method net/minecraft/a/a/g.b:(IIII)Z
+     225: pop
+     226: aload_0
+     227: iload_1
+     228: iconst_3
+     229: iadd
+     230: iconst_1
+     231: isub
+     232: iload_2
+     233: iload_3
+     234: getstatic     #117                // Field net/minecraft/a/a/b/x.af:Lnet/minecraft/a/a/b/x;
+     237: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     240: invokevirtual #210                // Method net/minecraft/a/a/g.b:(IIII)Z
+     243: pop
+     244: return
+
+  private void b(net.minecraft.a.a.g);
+    Code:
+       0: iconst_0
+       1: istore_2
+       2: iload_2
+       3: aload_0
+       4: getfield      #138                // Field f:I
+       7: if_icmpge     129
+      10: aload_0
+      11: iload_2
+      12: i2f
+      13: ldc           #23                 // float 100.0f
+      15: fmul
+      16: aload_0
+      17: getfield      #138                // Field f:I
+      20: iconst_1
+      21: isub
+      22: i2f
+      23: fdiv
+      24: invokespecial #192                // Method a:(F)V
+      27: iconst_0
+      28: istore_3
+      29: iload_3
+      30: aload_0
+      31: getfield      #140                // Field h:I
+      34: if_icmpge     123
+      37: iconst_0
+      38: istore        4
+      40: iload         4
+      42: aload_0
+      43: getfield      #139                // Field g:I
+      46: if_icmpge     117
+      49: aload_1
+      50: iload_2
+      51: iload_3
+      52: iload         4
+      54: invokevirtual #206                // Method net/minecraft/a/a/g.a:(III)I
+      57: getstatic     #122                // Field net/minecraft/a/a/b/x.k:Lnet/minecraft/a/a/b/x;
+      60: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+      63: if_icmpne     111
+      66: aload_1
+      67: iload_2
+      68: iload_3
+      69: iconst_1
+      70: iadd
+      71: iload         4
+      73: invokevirtual #212                // Method net/minecraft/a/a/g.d:(III)B
+      76: iconst_4
+      77: if_icmplt     111
+      80: aload_1
+      81: iload_2
+      82: iload_3
+      83: iconst_1
+      84: iadd
+      85: iload         4
+      87: invokevirtual #213                // Method net/minecraft/a/a/g.f:(III)Lnet/minecraft/a/a/d/c;
+      90: invokevirtual #204                // Method net/minecraft/a/a/d/c.b:()Z
+      93: ifne          111
+      96: aload_1
+      97: iload_2
+      98: iload_3
+      99: iload         4
+     101: getstatic     #121                // Field net/minecraft/a/a/b/x.j:Lnet/minecraft/a/a/b/af;
+     104: getfield      #111                // Field net/minecraft/a/a/b/af.at:I
+     107: invokevirtual #207                // Method net/minecraft/a/a/g.a:(IIII)Z
+     110: pop
+     111: iinc          4, 1
+     114: goto          40
+     117: iinc          3, 1
+     120: goto          29
+     123: iinc          2, 1
+     126: goto          2
+     129: return
+
+  private void c(net.minecraft.a.a.g);
+    Code:
+       0: aload_0
+       1: getfield      #138                // Field f:I
+       4: aload_0
+       5: getfield      #139                // Field g:I
+       8: imul
+       9: aload_0
+      10: getfield      #140                // Field h:I
+      13: imul
+      14: ldc           #1                  // int 80000
+      16: idiv
+      17: istore_2
+      18: iconst_0
+      19: istore_3
+      20: iload_3
+      21: iload_2
+      22: if_icmpge     259
+      25: iload_3
+      26: bipush        100
+      28: irem
+      29: ifne          46
+      32: aload_0
+      33: iload_3
+      34: i2f
+      35: ldc           #23                 // float 100.0f
+      37: fmul
+      38: iload_2
+      39: iconst_1
+      40: isub
+      41: i2f
+      42: fdiv
+      43: invokespecial #192                // Method a:(F)V
+      46: aload_0
+      47: getfield      #141                // Field i:Ljava/util/Random;
+      50: aload_0
+      51: getfield      #138                // Field f:I
+      54: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      57: istore        4
+      59: aload_0
+      60: getfield      #141                // Field i:Ljava/util/Random;
+      63: aload_0
+      64: getfield      #140                // Field h:I
+      67: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      70: istore        5
+      72: aload_0
+      73: getfield      #141                // Field i:Ljava/util/Random;
+      76: aload_0
+      77: getfield      #139                // Field g:I
+      80: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      83: istore        6
+      85: iconst_0
+      86: istore        7
+      88: iload         7
+      90: bipush        25
+      92: if_icmpge     253
+      95: iload         4
+      97: istore        8
+      99: iload         5
+     101: istore        9
+     103: iload         6
+     105: istore        10
+     107: iconst_0
+     108: istore        11
+     110: iload         11
+     112: bipush        20
+     114: if_icmpge     247
+     117: iload         8
+     119: aload_0
+     120: getfield      #141                // Field i:Ljava/util/Random;
+     123: bipush        12
+     125: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     128: aload_0
+     129: getfield      #141                // Field i:Ljava/util/Random;
+     132: bipush        12
+     134: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     137: isub
+     138: iadd
+     139: istore        8
+     141: iload         9
+     143: aload_0
+     144: getfield      #141                // Field i:Ljava/util/Random;
+     147: iconst_3
+     148: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     151: aload_0
+     152: getfield      #141                // Field i:Ljava/util/Random;
+     155: bipush        6
+     157: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     160: isub
+     161: iadd
+     162: istore        9
+     164: iload         10
+     166: aload_0
+     167: getfield      #141                // Field i:Ljava/util/Random;
+     170: bipush        12
+     172: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     175: aload_0
+     176: getfield      #141                // Field i:Ljava/util/Random;
+     179: bipush        12
+     181: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     184: isub
+     185: iadd
+     186: istore        10
+     188: iload         8
+     190: iflt          241
+     193: iload         9
+     195: iflt          241
+     198: iload         10
+     200: iflt          241
+     203: iload         8
+     205: aload_0
+     206: getfield      #138                // Field f:I
+     209: if_icmpge     241
+     212: iload         9
+     214: aload_0
+     215: getfield      #140                // Field h:I
+     218: if_icmpge     241
+     221: iload         10
+     223: aload_0
+     224: getfield      #139                // Field g:I
+     227: if_icmpge     241
+     230: aload_1
+     231: iload         8
+     233: iload         9
+     235: iload         10
+     237: invokevirtual #214                // Method net/minecraft/a/a/g.h:(III)Z
+     240: pop
+     241: iinc          11, 1
+     244: goto          110
+     247: iinc          7, 1
+     250: goto          88
+     253: iinc          3, 1
+     256: goto          20
+     259: return
+
+  private void a(net.minecraft.a.a.g, net.minecraft.a.a.b.ad, int);
+    Code:
+       0: aload_0
+       1: getfield      #138                // Field f:I
+       4: i2l
+       5: aload_0
+       6: getfield      #139                // Field g:I
+       9: i2l
+      10: lmul
+      11: aload_0
+      12: getfield      #140                // Field h:I
+      15: i2l
+      16: lmul
+      17: iload_3
+      18: i2l
+      19: lmul
+      20: ldc2_w        #73                 // long 1600000l
+      23: ldiv
+      24: l2i
+      25: istore_3
+      26: iconst_0
+      27: istore        4
+      29: iload         4
+      31: iload_3
+      32: if_icmpge     297
+      35: iload         4
+      37: bipush        100
+      39: irem
+      40: ifne          58
+      43: aload_0
+      44: iload         4
+      46: i2f
+      47: ldc           #23                 // float 100.0f
+      49: fmul
+      50: iload_3
+      51: iconst_1
+      52: isub
+      53: i2f
+      54: fdiv
+      55: invokespecial #192                // Method a:(F)V
+      58: aload_0
+      59: getfield      #141                // Field i:Ljava/util/Random;
+      62: aload_0
+      63: getfield      #138                // Field f:I
+      66: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      69: istore        5
+      71: aload_0
+      72: getfield      #141                // Field i:Ljava/util/Random;
+      75: aload_0
+      76: getfield      #140                // Field h:I
+      79: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      82: istore        6
+      84: aload_0
+      85: getfield      #141                // Field i:Ljava/util/Random;
+      88: aload_0
+      89: getfield      #139                // Field g:I
+      92: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      95: istore        7
+      97: iconst_0
+      98: istore        8
+     100: iload         8
+     102: bipush        10
+     104: if_icmpge     291
+     107: iload         5
+     109: istore        9
+     111: iload         6
+     113: istore        10
+     115: iload         7
+     117: istore        11
+     119: iconst_0
+     120: istore        12
+     122: iload         12
+     124: bipush        10
+     126: if_icmpge     285
+     129: iload         9
+     131: aload_0
+     132: getfield      #141                // Field i:Ljava/util/Random;
+     135: iconst_4
+     136: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     139: aload_0
+     140: getfield      #141                // Field i:Ljava/util/Random;
+     143: iconst_4
+     144: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     147: isub
+     148: iadd
+     149: istore        9
+     151: iload         10
+     153: aload_0
+     154: getfield      #141                // Field i:Ljava/util/Random;
+     157: iconst_2
+     158: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     161: aload_0
+     162: getfield      #141                // Field i:Ljava/util/Random;
+     165: iconst_2
+     166: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     169: isub
+     170: iadd
+     171: istore        10
+     173: iload         11
+     175: aload_0
+     176: getfield      #141                // Field i:Ljava/util/Random;
+     179: iconst_4
+     180: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     183: aload_0
+     184: getfield      #141                // Field i:Ljava/util/Random;
+     187: iconst_4
+     188: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     191: isub
+     192: iadd
+     193: istore        11
+     195: iload         9
+     197: iflt          279
+     200: iload         11
+     202: iflt          279
+     205: iload         10
+     207: ifle          279
+     210: iload         9
+     212: aload_0
+     213: getfield      #138                // Field f:I
+     216: if_icmpge     279
+     219: iload         11
+     221: aload_0
+     222: getfield      #139                // Field g:I
+     225: if_icmpge     279
+     228: iload         10
+     230: aload_0
+     231: getfield      #140                // Field h:I
+     234: if_icmpge     279
+     237: aload_1
+     238: iload         9
+     240: iload         10
+     242: iload         11
+     244: invokevirtual #206                // Method net/minecraft/a/a/g.a:(III)I
+     247: ifne          279
+     250: aload_2
+     251: aload_1
+     252: iload         9
+     254: iload         10
+     256: iload         11
+     258: invokevirtual #190                // Method net/minecraft/a/a/b/ad.e:(Lnet/minecraft/a/a/g;III)Z
+     261: ifeq          279
+     264: aload_1
+     265: iload         9
+     267: iload         10
+     269: iload         11
+     271: aload_2
+     272: getfield      #110                // Field net/minecraft/a/a/b/ad.at:I
+     275: invokevirtual #210                // Method net/minecraft/a/a/g.b:(IIII)Z
+     278: pop
+     279: iinc          12, 1
+     282: goto          122
+     285: iinc          8, 1
+     288: goto          100
+     291: iinc          4, 1
+     294: goto          29
+     297: return
+
+  private int a(int, int, int, int);
+    Code:
+       0: iconst_0
+       1: istore        5
+       3: iload_1
+       4: i2b
+       5: istore_1
+       6: aload_0
+       7: getfield      #138                // Field f:I
+      10: istore        6
+      12: aload_0
+      13: getfield      #139                // Field g:I
+      16: istore        7
+      18: aload_0
+      19: getfield      #140                // Field h:I
+      22: istore        8
+      24: iload         6
+      26: iload         7
+      28: imul
+      29: iload         8
+      31: imul
+      32: sipush        256
+      35: idiv
+      36: bipush        64
+      38: idiv
+      39: iload_2
+      40: imul
+      41: bipush        100
+      43: idiv
+      44: istore_2
+      45: iconst_0
+      46: istore        9
+      48: iload         9
+      50: iload_2
+      51: if_icmpge     568
+      54: aload_0
+      55: iload         9
+      57: i2f
+      58: ldc           #23                 // float 100.0f
+      60: fmul
+      61: iload_2
+      62: iconst_1
+      63: isub
+      64: i2f
+      65: fdiv
+      66: invokespecial #192                // Method a:(F)V
+      69: aload_0
+      70: getfield      #141                // Field i:Ljava/util/Random;
+      73: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+      76: iload         6
+      78: i2f
+      79: fmul
+      80: fstore        10
+      82: aload_0
+      83: getfield      #141                // Field i:Ljava/util/Random;
+      86: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+      89: iload         8
+      91: i2f
+      92: fmul
+      93: fstore        11
+      95: aload_0
+      96: getfield      #141                // Field i:Ljava/util/Random;
+      99: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     102: iload         7
+     104: i2f
+     105: fmul
+     106: fstore        12
+     108: fload         11
+     110: iload         4
+     112: i2f
+     113: fcmpl
+     114: ifgt          562
+     117: aload_0
+     118: getfield      #141                // Field i:Ljava/util/Random;
+     121: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     124: aload_0
+     125: getfield      #141                // Field i:Ljava/util/Random;
+     128: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     131: fadd
+     132: ldc           #22                 // float 75.0f
+     134: fmul
+     135: iload_3
+     136: i2f
+     137: fmul
+     138: ldc           #23                 // float 100.0f
+     140: fdiv
+     141: f2i
+     142: istore        13
+     144: aload_0
+     145: getfield      #141                // Field i:Ljava/util/Random;
+     148: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     151: ldc           #19                 // float 3.1415927f
+     153: fmul
+     154: fconst_2
+     155: fmul
+     156: fstore        14
+     158: fconst_0
+     159: fstore        15
+     161: aload_0
+     162: getfield      #141                // Field i:Ljava/util/Random;
+     165: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     168: ldc           #19                 // float 3.1415927f
+     170: fmul
+     171: fconst_2
+     172: fmul
+     173: fstore        16
+     175: fconst_0
+     176: fstore        17
+     178: iconst_0
+     179: istore        18
+     181: iload         18
+     183: iload         13
+     185: if_icmpge     562
+     188: fload         10
+     190: fload         14
+     192: invokestatic  #164                // Method a/a.a:(F)F
+     195: fload         16
+     197: invokestatic  #165                // Method a/a.b:(F)F
+     200: fmul
+     201: fadd
+     202: fstore        10
+     204: fload         12
+     206: fload         14
+     208: invokestatic  #165                // Method a/a.b:(F)F
+     211: fload         16
+     213: invokestatic  #165                // Method a/a.b:(F)F
+     216: fmul
+     217: fadd
+     218: fstore        12
+     220: fload         11
+     222: fload         16
+     224: invokestatic  #164                // Method a/a.a:(F)F
+     227: fadd
+     228: fstore        11
+     230: fload         14
+     232: fload         15
+     234: ldc           #12                 // float 0.2f
+     236: fmul
+     237: fadd
+     238: fstore        14
+     240: fload         15
+     242: ldc           #16                 // float 0.9f
+     244: fmul
+     245: dup
+     246: fstore        15
+     248: aload_0
+     249: getfield      #141                // Field i:Ljava/util/Random;
+     252: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     255: aload_0
+     256: getfield      #141                // Field i:Ljava/util/Random;
+     259: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     262: fsub
+     263: fadd
+     264: fstore        15
+     266: fload         16
+     268: fload         17
+     270: ldc           #14                 // float 0.5f
+     272: fmul
+     273: fadd
+     274: dup
+     275: fstore        16
+     277: ldc           #14                 // float 0.5f
+     279: fmul
+     280: fstore        16
+     282: fload         17
+     284: ldc           #16                 // float 0.9f
+     286: fmul
+     287: dup
+     288: fstore        17
+     290: aload_0
+     291: getfield      #141                // Field i:Ljava/util/Random;
+     294: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     297: aload_0
+     298: getfield      #141                // Field i:Ljava/util/Random;
+     301: invokevirtual #186                // Method java/util/Random.nextFloat:()F
+     304: fsub
+     305: fadd
+     306: fstore        17
+     308: iload         18
+     310: i2f
+     311: ldc           #19                 // float 3.1415927f
+     313: fmul
+     314: iload         13
+     316: i2f
+     317: fdiv
+     318: invokestatic  #164                // Method a/a.a:(F)F
+     321: iload_3
+     322: i2f
+     323: fmul
+     324: ldc           #23                 // float 100.0f
+     326: fdiv
+     327: fconst_1
+     328: fadd
+     329: fstore        19
+     331: fload         10
+     333: fload         19
+     335: fsub
+     336: f2i
+     337: istore        20
+     339: iload         20
+     341: fload         10
+     343: fload         19
+     345: fadd
+     346: f2i
+     347: if_icmpgt     556
+     350: fload         11
+     352: fload         19
+     354: fsub
+     355: f2i
+     356: istore        21
+     358: iload         21
+     360: fload         11
+     362: fload         19
+     364: fadd
+     365: f2i
+     366: if_icmpgt     550
+     369: fload         12
+     371: fload         19
+     373: fsub
+     374: f2i
+     375: istore        22
+     377: iload         22
+     379: fload         12
+     381: fload         19
+     383: fadd
+     384: f2i
+     385: if_icmpgt     544
+     388: iload         20
+     390: i2f
+     391: fload         10
+     393: fsub
+     394: fstore        23
+     396: iload         21
+     398: i2f
+     399: fload         11
+     401: fsub
+     402: fstore        24
+     404: iload         22
+     406: i2f
+     407: fload         12
+     409: fsub
+     410: fstore        25
+     412: fload         23
+     414: fload         23
+     416: fmul
+     417: fload         24
+     419: fload         24
+     421: fmul
+     422: fconst_2
+     423: fmul
+     424: fadd
+     425: fload         25
+     427: fload         25
+     429: fmul
+     430: fadd
+     431: dup
+     432: fstore        23
+     434: fload         19
+     436: fload         19
+     438: fmul
+     439: fcmpg
+     440: ifge          538
+     443: iload         20
+     445: ifle          538
+     448: iload         21
+     450: ifle          538
+     453: iload         22
+     455: ifle          538
+     458: iload         20
+     460: aload_0
+     461: getfield      #138                // Field f:I
+     464: iconst_1
+     465: isub
+     466: if_icmpge     538
+     469: iload         21
+     471: aload_0
+     472: getfield      #140                // Field h:I
+     475: iconst_1
+     476: isub
+     477: if_icmpge     538
+     480: iload         22
+     482: aload_0
+     483: getfield      #139                // Field g:I
+     486: iconst_1
+     487: isub
+     488: if_icmpge     538
+     491: iload         21
+     493: aload_0
+     494: getfield      #139                // Field g:I
+     497: imul
+     498: iload         22
+     500: iadd
+     501: aload_0
+     502: getfield      #138                // Field f:I
+     505: imul
+     506: iload         20
+     508: iadd
+     509: istore        23
+     511: aload_0
+     512: getfield      #142                // Field j:[B
+     515: iload         23
+     517: baload
+     518: getstatic     #120                // Field net/minecraft/a/a/b/x.i:Lnet/minecraft/a/a/b/x;
+     521: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     524: if_icmpne     538
+     527: aload_0
+     528: getfield      #142                // Field j:[B
+     531: iload         23
+     533: iload_1
+     534: bastore
+     535: iinc          5, 1
+     538: iinc          22, 1
+     541: goto          377
+     544: iinc          21, 1
+     547: goto          358
+     550: iinc          20, 1
+     553: goto          339
+     556: iinc          18, 1
+     559: goto          181
+     562: iinc          9, 1
+     565: goto          48
+     568: iload         5
+     570: ireturn
+
+  private void a();
+    Code:
+       0: getstatic     #125                // Field net/minecraft/a/a/b/x.q:Lnet/minecraft/a/a/b/x;
+       3: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+       6: istore_1
+       7: aload_0
+       8: getfield      #136                // Field d:I
+      11: iconst_1
+      12: if_icmpne     22
+      15: getstatic     #127                // Field net/minecraft/a/a/b/x.s:Lnet/minecraft/a/a/b/x;
+      18: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+      21: istore_1
+      22: aload_0
+      23: getfield      #138                // Field f:I
+      26: aload_0
+      27: getfield      #139                // Field g:I
+      30: imul
+      31: aload_0
+      32: getfield      #140                // Field h:I
+      35: imul
+      36: sipush        1000
+      39: idiv
+      40: istore_2
+      41: iconst_0
+      42: istore_3
+      43: iload_3
+      44: iload_2
+      45: if_icmpge     204
+      48: iload_3
+      49: bipush        100
+      51: irem
+      52: ifne          69
+      55: aload_0
+      56: iload_3
+      57: i2f
+      58: ldc           #23                 // float 100.0f
+      60: fmul
+      61: iload_2
+      62: iconst_1
+      63: isub
+      64: i2f
+      65: fdiv
+      66: invokespecial #192                // Method a:(F)V
+      69: aload_0
+      70: getfield      #141                // Field i:Ljava/util/Random;
+      73: aload_0
+      74: getfield      #138                // Field f:I
+      77: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      80: istore        4
+      82: aload_0
+      83: getfield      #141                // Field i:Ljava/util/Random;
+      86: aload_0
+      87: getfield      #140                // Field h:I
+      90: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      93: istore        5
+      95: aload_0
+      96: getfield      #141                // Field i:Ljava/util/Random;
+      99: aload_0
+     100: getfield      #139                // Field g:I
+     103: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     106: istore        6
+     108: aload_0
+     109: getfield      #142                // Field j:[B
+     112: iload         5
+     114: aload_0
+     115: getfield      #139                // Field g:I
+     118: imul
+     119: iload         6
+     121: iadd
+     122: aload_0
+     123: getfield      #138                // Field f:I
+     126: imul
+     127: iload         4
+     129: iadd
+     130: baload
+     131: ifne          198
+     134: aload_0
+     135: iload         4
+     137: iload         5
+     139: iload         6
+     141: iconst_0
+     142: sipush        255
+     145: invokespecial #194                // Method a:(IIIII)J
+     148: dup2
+     149: lstore        7
+     151: lconst_0
+     152: lcmp
+     153: ifle          183
+     156: lload         7
+     158: ldc2_w        #71                 // long 640l
+     161: lcmp
+     162: ifge          183
+     165: aload_0
+     166: iload         4
+     168: iload         5
+     170: iload         6
+     172: sipush        255
+     175: iload_1
+     176: invokespecial #194                // Method a:(IIIII)J
+     179: pop2
+     180: goto          198
+     183: aload_0
+     184: iload         4
+     186: iload         5
+     188: iload         6
+     190: sipush        255
+     193: iconst_0
+     194: invokespecial #194                // Method a:(IIIII)J
+     197: pop2
+     198: iinc          3, 1
+     201: goto          43
+     204: aload_0
+     205: ldc           #23                 // float 100.0f
+     207: invokespecial #192                // Method a:(F)V
+     210: return
+
+  private void b();
+    Code:
+       0: aload_0
+       1: dup
+       2: getfield      #145                // Field m:I
+       5: iconst_1
+       6: iadd
+       7: putfield      #145                // Field m:I
+      10: aload_0
+      11: fconst_0
+      12: putfield      #147                // Field o:F
+      15: aload_0
+      16: fconst_0
+      17: invokespecial #192                // Method a:(F)V
+      20: return
+
+  private void a(float);
+    Code:
+       0: fload_1
+       1: fconst_0
+       2: fcmpg
+       3: ifge          16
+       6: new           #52                 // class java/lang/IllegalStateException
+       9: dup
+      10: ldc           #37                 // String Failed to set next phase!
+      12: invokespecial #167                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      15: athrow
+      16: aload_0
+      17: getfield      #145                // Field m:I
+      20: iconst_1
+      21: isub
+      22: i2f
+      23: fload_1
+      24: ldc           #23                 // float 100.0f
+      26: fdiv
+      27: fadd
+      28: ldc           #23                 // float 100.0f
+      30: fmul
+      31: aload_0
+      32: getfield      #146                // Field n:I
+      35: i2f
+      36: fdiv
+      37: f2i
+      38: istore_1
+      39: aload_0
+      40: getfield      #137                // Field e:La/b;
+      43: iload_1
+      44: invokeinterface #215,  2          // InterfaceMethod a/b.a:(I)V
+      49: return
+
+  private void c();
+    Code:
+       0: aload_0
+       1: getfield      #138                // Field f:I
+       4: aload_0
+       5: getfield      #139                // Field g:I
+       8: imul
+       9: aload_0
+      10: getfield      #140                // Field h:I
+      13: imul
+      14: sipush        2000
+      17: idiv
+      18: istore_1
+      19: aload_0
+      20: getfield      #144                // Field l:I
+      23: istore_2
+      24: iconst_0
+      25: istore_3
+      26: iload_3
+      27: iload_1
+      28: if_icmpge     222
+      31: iload_3
+      32: bipush        100
+      34: irem
+      35: ifne          52
+      38: aload_0
+      39: iload_3
+      40: i2f
+      41: ldc           #23                 // float 100.0f
+      43: fmul
+      44: iload_1
+      45: iconst_1
+      46: isub
+      47: i2f
+      48: fdiv
+      49: invokespecial #192                // Method a:(F)V
+      52: aload_0
+      53: getfield      #141                // Field i:Ljava/util/Random;
+      56: aload_0
+      57: getfield      #138                // Field f:I
+      60: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      63: istore        4
+      65: aload_0
+      66: getfield      #141                // Field i:Ljava/util/Random;
+      69: iload_2
+      70: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      73: aload_0
+      74: getfield      #141                // Field i:Ljava/util/Random;
+      77: iload_2
+      78: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      81: invokestatic  #172                // Method java/lang/Math.min:(II)I
+      84: aload_0
+      85: getfield      #141                // Field i:Ljava/util/Random;
+      88: iload_2
+      89: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+      92: aload_0
+      93: getfield      #141                // Field i:Ljava/util/Random;
+      96: iload_2
+      97: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     100: invokestatic  #172                // Method java/lang/Math.min:(II)I
+     103: invokestatic  #172                // Method java/lang/Math.min:(II)I
+     106: istore        5
+     108: aload_0
+     109: getfield      #141                // Field i:Ljava/util/Random;
+     112: aload_0
+     113: getfield      #139                // Field g:I
+     116: invokevirtual #187                // Method java/util/Random.nextInt:(I)I
+     119: istore        6
+     121: aload_0
+     122: getfield      #142                // Field j:[B
+     125: iload         5
+     127: aload_0
+     128: getfield      #139                // Field g:I
+     131: imul
+     132: iload         6
+     134: iadd
+     135: aload_0
+     136: getfield      #138                // Field f:I
+     139: imul
+     140: iload         4
+     142: iadd
+     143: baload
+     144: ifne          216
+     147: aload_0
+     148: iload         4
+     150: iload         5
+     152: iload         6
+     154: iconst_0
+     155: sipush        255
+     158: invokespecial #194                // Method a:(IIIII)J
+     161: dup2
+     162: lstore        7
+     164: lconst_0
+     165: lcmp
+     166: ifle          201
+     169: lload         7
+     171: ldc2_w        #71                 // long 640l
+     174: lcmp
+     175: ifge          201
+     178: aload_0
+     179: iload         4
+     181: iload         5
+     183: iload         6
+     185: sipush        255
+     188: getstatic     #127                // Field net/minecraft/a/a/b/x.s:Lnet/minecraft/a/a/b/x;
+     191: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     194: invokespecial #194                // Method a:(IIIII)J
+     197: pop2
+     198: goto          216
+     201: aload_0
+     202: iload         4
+     204: iload         5
+     206: iload         6
+     208: sipush        255
+     211: iconst_0
+     212: invokespecial #194                // Method a:(IIIII)J
+     215: pop2
+     216: iinc          3, 1
+     219: goto          26
+     222: aload_0
+     223: ldc           #23                 // float 100.0f
+     225: invokespecial #192                // Method a:(F)V
+     228: return
+
+  private long a(int, int, int, int, int);
+    Code:
+       0: iload         5
+       2: i2b
+       3: istore        6
+       5: iload         4
+       7: i2b
+       8: istore        4
+      10: new           #57                 // class java/util/ArrayList
+      13: dup
+      14: invokespecial #181                // Method java/util/ArrayList."<init>":()V
+      17: astore        7
+      19: iconst_0
+      20: istore        8
+      22: iconst_1
+      23: istore        9
+      25: iconst_1
+      26: istore        10
+      28: iconst_1
+      29: iload         9
+      31: ishl
+      32: aload_0
+      33: getfield      #138                // Field f:I
+      36: if_icmpge     45
+      39: iinc          9, 1
+      42: goto          28
+      45: iconst_1
+      46: iload         10
+      48: ishl
+      49: aload_0
+      50: getfield      #139                // Field g:I
+      53: if_icmpge     62
+      56: iinc          10, 1
+      59: goto          45
+      62: aload_0
+      63: getfield      #139                // Field g:I
+      66: iconst_1
+      67: isub
+      68: istore        11
+      70: aload_0
+      71: getfield      #138                // Field f:I
+      74: iconst_1
+      75: isub
+      76: istore        12
+      78: aload_0
+      79: getfield      #148                // Field p:[I
+      82: iconst_0
+      83: iinc          8, 1
+      86: iload_2
+      87: iload         10
+      89: ishl
+      90: iload_3
+      91: iadd
+      92: iload         9
+      94: ishl
+      95: iload_1
+      96: iadd
+      97: iastore
+      98: lconst_0
+      99: lstore        14
+     101: aload_0
+     102: getfield      #138                // Field f:I
+     105: aload_0
+     106: getfield      #139                // Field g:I
+     109: imul
+     110: istore_1
+     111: iload         8
+     113: ifle          724
+     116: aload_0
+     117: getfield      #148                // Field p:[I
+     120: iinc          8, -1
+     123: iload         8
+     125: iaload
+     126: istore_2
+     127: iload         8
+     129: ifne          166
+     132: aload         7
+     134: invokevirtual #184                // Method java/util/ArrayList.size:()I
+     137: ifle          166
+     140: aload_0
+     141: aload         7
+     143: aload         7
+     145: invokevirtual #184                // Method java/util/ArrayList.size:()I
+     148: iconst_1
+     149: isub
+     150: invokevirtual #183                // Method java/util/ArrayList.remove:(I)Ljava/lang/Object;
+     153: checkcast     #48                 // class "[I"
+     156: putfield      #148                // Field p:[I
+     159: aload_0
+     160: getfield      #148                // Field p:[I
+     163: arraylength
+     164: istore        8
+     166: iload_2
+     167: iload         9
+     169: ishr
+     170: iload         11
+     172: iand
+     173: istore_3
+     174: iload_2
+     175: iload         9
+     177: iload         10
+     179: iadd
+     180: ishr
+     181: istore        13
+     183: iload_2
+     184: iload         12
+     186: iand
+     187: dup
+     188: istore        16
+     190: istore        17
+     192: iload         16
+     194: ifle          219
+     197: aload_0
+     198: getfield      #142                // Field j:[B
+     201: iload_2
+     202: iconst_1
+     203: isub
+     204: baload
+     205: iload         4
+     207: if_icmpne     219
+     210: iinc          16, -1
+     213: iinc          2, -1
+     216: goto          192
+     219: iload         17
+     221: aload_0
+     222: getfield      #138                // Field f:I
+     225: if_icmpge     251
+     228: aload_0
+     229: getfield      #142                // Field j:[B
+     232: iload_2
+     233: iload         17
+     235: iadd
+     236: iload         16
+     238: isub
+     239: baload
+     240: iload         4
+     242: if_icmpne     251
+     245: iinc          17, 1
+     248: goto          219
+     251: iload_2
+     252: iload         9
+     254: ishr
+     255: iload         11
+     257: iand
+     258: istore        18
+     260: iload_2
+     261: iload         9
+     263: iload         10
+     265: iadd
+     266: ishr
+     267: istore        19
+     269: iload         5
+     271: sipush        255
+     274: if_icmpne     327
+     277: iload         16
+     279: ifeq          323
+     282: iload         17
+     284: aload_0
+     285: getfield      #138                // Field f:I
+     288: iconst_1
+     289: isub
+     290: if_icmpeq     323
+     293: iload         13
+     295: ifeq          323
+     298: iload         13
+     300: aload_0
+     301: getfield      #140                // Field h:I
+     304: iconst_1
+     305: isub
+     306: if_icmpeq     323
+     309: iload_3
+     310: ifeq          323
+     313: iload_3
+     314: aload_0
+     315: getfield      #139                // Field g:I
+     318: iconst_1
+     319: isub
+     320: if_icmpne     327
+     323: ldc2_w        #69                 // long -1l
+     326: lreturn
+     327: iload         18
+     329: iload_3
+     330: if_icmpne     340
+     333: iload         19
+     335: iload         13
+     337: if_icmpeq     348
+     340: getstatic     #109                // Field java/lang/System.out:Ljava/io/PrintStream;
+     343: ldc           #35                 // String Diagonal flood!?
+     345: invokevirtual #166                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+     348: iconst_0
+     349: istore        18
+     351: iconst_0
+     352: istore        19
+     354: iconst_0
+     355: istore        20
+     357: lload         14
+     359: iload         17
+     361: iload         16
+     363: isub
+     364: i2l
+     365: ladd
+     366: lstore        14
+     368: iload         16
+     370: istore        16
+     372: iload         16
+     374: iload         17
+     376: if_icmpge     721
+     379: aload_0
+     380: getfield      #142                // Field j:[B
+     383: iload_2
+     384: iload         6
+     386: bastore
+     387: iload_3
+     388: ifle          474
+     391: aload_0
+     392: getfield      #142                // Field j:[B
+     395: iload_2
+     396: aload_0
+     397: getfield      #138                // Field f:I
+     400: isub
+     401: baload
+     402: iload         4
+     404: if_icmpne     411
+     407: iconst_1
+     408: goto          412
+     411: iconst_0
+     412: dup
+     413: istore        21
+     415: ifeq          470
+     418: iload         18
+     420: ifne          470
+     423: iload         8
+     425: aload_0
+     426: getfield      #148                // Field p:[I
+     429: arraylength
+     430: if_icmpne     454
+     433: aload         7
+     435: aload_0
+     436: getfield      #148                // Field p:[I
+     439: invokevirtual #182                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     442: pop
+     443: aload_0
+     444: ldc           #2                  // int 1048576
+     446: newarray       int
+     448: putfield      #148                // Field p:[I
+     451: iconst_0
+     452: istore        8
+     454: aload_0
+     455: getfield      #148                // Field p:[I
+     458: iload         8
+     460: iinc          8, 1
+     463: iload_2
+     464: aload_0
+     465: getfield      #138                // Field f:I
+     468: isub
+     469: iastore
+     470: iload         21
+     472: istore        18
+     474: iload_3
+     475: aload_0
+     476: getfield      #139                // Field g:I
+     479: iconst_1
+     480: isub
+     481: if_icmpge     567
+     484: aload_0
+     485: getfield      #142                // Field j:[B
+     488: iload_2
+     489: aload_0
+     490: getfield      #138                // Field f:I
+     493: iadd
+     494: baload
+     495: iload         4
+     497: if_icmpne     504
+     500: iconst_1
+     501: goto          505
+     504: iconst_0
+     505: dup
+     506: istore        21
+     508: ifeq          563
+     511: iload         19
+     513: ifne          563
+     516: iload         8
+     518: aload_0
+     519: getfield      #148                // Field p:[I
+     522: arraylength
+     523: if_icmpne     547
+     526: aload         7
+     528: aload_0
+     529: getfield      #148                // Field p:[I
+     532: invokevirtual #182                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     535: pop
+     536: aload_0
+     537: ldc           #2                  // int 1048576
+     539: newarray       int
+     541: putfield      #148                // Field p:[I
+     544: iconst_0
+     545: istore        8
+     547: aload_0
+     548: getfield      #148                // Field p:[I
+     551: iload         8
+     553: iinc          8, 1
+     556: iload_2
+     557: aload_0
+     558: getfield      #138                // Field f:I
+     561: iadd
+     562: iastore
+     563: iload         21
+     565: istore        19
+     567: iload         13
+     569: ifle          712
+     572: aload_0
+     573: getfield      #142                // Field j:[B
+     576: iload_2
+     577: iload_1
+     578: isub
+     579: baload
+     580: istore        21
+     582: iload         6
+     584: getstatic     #126                // Field net/minecraft/a/a/b/x.r:Lnet/minecraft/a/a/b/x;
+     587: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     590: if_icmpeq     604
+     593: iload         6
+     595: getstatic     #127                // Field net/minecraft/a/a/b/x.s:Lnet/minecraft/a/a/b/x;
+     598: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     601: if_icmpne     641
+     604: iload         21
+     606: getstatic     #124                // Field net/minecraft/a/a/b/x.p:Lnet/minecraft/a/a/b/x;
+     609: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     612: if_icmpeq     626
+     615: iload         21
+     617: getstatic     #125                // Field net/minecraft/a/a/b/x.q:Lnet/minecraft/a/a/b/x;
+     620: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     623: if_icmpne     641
+     626: aload_0
+     627: getfield      #142                // Field j:[B
+     630: iload_2
+     631: iload_1
+     632: isub
+     633: getstatic     #120                // Field net/minecraft/a/a/b/x.i:Lnet/minecraft/a/a/b/x;
+     636: getfield      #119                // Field net/minecraft/a/a/b/x.at:I
+     639: i2b
+     640: bastore
+     641: iload         21
+     643: iload         4
+     645: if_icmpne     652
+     648: iconst_1
+     649: goto          653
+     652: iconst_0
+     653: dup
+     654: istore        21
+     656: ifeq          708
+     659: iload         20
+     661: ifne          708
+     664: iload         8
+     666: aload_0
+     667: getfield      #148                // Field p:[I
+     670: arraylength
+     671: if_icmpne     695
+     674: aload         7
+     676: aload_0
+     677: getfield      #148                // Field p:[I
+     680: invokevirtual #182                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     683: pop
+     684: aload_0
+     685: ldc           #2                  // int 1048576
+     687: newarray       int
+     689: putfield      #148                // Field p:[I
+     692: iconst_0
+     693: istore        8
+     695: aload_0
+     696: getfield      #148                // Field p:[I
+     699: iload         8
+     701: iinc          8, 1
+     704: iload_2
+     705: iload_1
+     706: isub
+     707: iastore
+     708: iload         21
+     710: istore        20
+     712: iinc          2, 1
+     715: iinc          16, 1
+     718: goto          372
+     721: goto          111
+     724: lload         14
+     726: lreturn
+}
